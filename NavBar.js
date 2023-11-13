@@ -24,7 +24,7 @@ function generateSelectorNavBar() {
     var e4 = '<li class="navigation-element"><a href="#">Converter</a></li>';
     var e5 = '<li class=navigation-element"><label class="switch"><input type="checkbox" id="select"><span class="slider"></span></label></li>'; /* adds a checkbox that styled as a slider switch to navigation bar> */
     var c1 = '<br id="b1"><br id="b2"><div class="converter-bar" id="cb"></div>' /* Adds a div for a unit converter below the nav bar. */
-    b.insertAdjacentHTML('afterbegin','<div id="nbsContainer"><ul class="navigation-bar" id="nbs">' + e1 + e2 + e3 + e4 + e5 + '</ul>' + c1 + '</div>');
+    b.insertAdjacentHTML('afterbegin','<div id="nbsContainer"><ul class="navigation-bar" id="nbs">' + e1 + e2 + e3 + e4 + '</div>');
 
 }
 
