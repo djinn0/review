@@ -12,11 +12,10 @@ function generateFooter()
     var x = document.getElementsByTagName("body")[0];
     let d = new Date();
     let n = d.getFullYear(); /* Adds current year to footer */
-    let f1 = `<li class="footer-element"><a href="index.html">Sex Toy Ahoy &copy ${n}</a></li>
+    let f1 = `<li class="footer-element"><a href="https://www.linkedin.com/in/david-redd">&copy David Redd ${n}</a></li>`
     let f2 = '<li class="footer-element"><a href="aboutme.html">About</a></li>'
     let f3 = '<li class="footer-element"><a href="aboutme.html">Contact</a></li>'
     x.insertAdjacentHTML('beforeend','<ul class="footer-bar" id="fb">' + f1 + f2 + f3 + '</ul>');
-
     /* Styling of Footer Bar (sf = Styling Footer) */
   
     
