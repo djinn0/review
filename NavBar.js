@@ -21,8 +21,6 @@ function generateSelectorNavBar() {
     var edc2 = '<a href="glossary.html">Glossary</a>'; 
     var edm = '<div class="dropdown-content">' + edc1 + edc2 + '</div>';
     var e3 = '<li class="navigation-element" id="dropdown"><a href="#">Menu&#9662;</a>' + edm + '</li>';
-    /* var e4 = '<li class="navigation-element"><a href="#">Converter</a></li>'; */
-    /* var e5 = '<li class=navigation-element"><label class="switch"><input type="checkbox" id="select"><span class="slider"></span></label></li>';  adds a checkbox that styled as a slider switch to navigation bar> */
     var c1 = '<br id="b1"><br id="b2"><div class="converter-bar" id="cb"></div>' /* Adds a div for a unit converter below the nav bar. */
     b.insertAdjacentHTML('afterbegin','<div id="nbsContainer"><ul class="navigation-bar" id="nbs">' + e1 + e2 + e3 + '</ul>' + c1 + '</div>');
 
@@ -36,7 +34,7 @@ function generateMobileNavBar(){
     var e3 = "<li class='navigation-element-mobile'><a href='glossary.html'>Glossary</a></li>"
     var e4 = "<li class='navigation-element-mobile'><a href='#' class='con'>Converter</a><label class='Mswitch'><input type='checkbox' id='select'><span class='slider'></span></label></li>"
     var c1 = "<div class='converter-bar' id='cb'></div>"
-    b.insertAdjacentHTML('afterbegin',"<div id='nbmContainer'><ul class='navigation-bar-mobile' id='nbm'>" + e1 + e2 + e3 + e4 + "</ul>" + c1 + "</div>");
+    b.insertAdjacentHTML('afterbegin',"<div id='nbmContainer'><ul class='navigation-bar-mobile' id='nbm'>" + e1 + e2 + "</ul>" + c1 + "</div>");
 }
 
 function generateSyling()
@@ -67,7 +65,7 @@ function generateSyling()
     var sn6 = ' #dropdown:hover .dropdown-content {display: block;}'; /*display menu content on hover */
     var sn7 = ' .dropdown-content a{display: block;}';
     /* insert styling */
-    s.insertAdjacentHTML('beforeend', sn1 + sn2 + sn3 + sn4 + sn5 + sn6 + sn7 + sm1 + sm2 + sm3 + sm5 + ss1 + ss2 + ss3 + ss4 + ss5 + ss6 + ss7); 
+    s.insertAdjacentHTML('beforeend', sn1 + sn2 + sn3 + sn4 + sn5 + sn6 + sn7 + sm1 + sm2 + sm3 + sm5); 
 
 }
 
