@@ -1,5 +1,6 @@
+
 /* This file generates and styles a footer bar on page load */
-/* Add <script src="Footer.js"></script> and <style> tag to <head>  */
+/* Add <script src="footer.js"></script> and <style> tag to <head>  */
 window.addEventListener('load', (event) => { 
     generateFooter();
 });
@@ -16,6 +17,7 @@ function generateFooter()
     let f2 = '<li class="footer-element"><a href="aboutme.html">About</a></li>'
     let f3 = '<li class="footer-element"><a href="aboutme.html">Contact</a></li>'
     x.insertAdjacentHTML('beforeend','<ul class="footer-bar" id="fb">' + f1 + f2 + f3 + '</ul>');
+
     /* Styling of Footer Bar (sf = Styling Footer) */
   
     
