@@ -16,13 +16,13 @@ function generateSelectorNavBar() {
     var b = document.getElementsByTagName("body")[0];
     var h = document.getElementsByTagName('head')[0];
     var e1 = '<li class="navigation-element"><a href="index.html">Home</a></li>';
-    var e2 = '<li class="navigation-element"><a href="index.html">New Recipes</a></li>';
-    var edc1 = '<a href="list.html">Recipe Index</a>'; 
+    var e2 = '<li class="navigation-element"><a href="index.html">New Reviews</a></li>';
+    var edc1 = '<a href="list.html">Index</a>'; 
     var edc2 = '<a href="glossary.html">Glossary</a>'; 
     var edm = '<div class="dropdown-content">' + edc1 + edc2 + '</div>';
     var e3 = '<li class="navigation-element" id="dropdown"><a href="#">Menu&#9662;</a>' + edm + '</li>';
-    var e4 = '<li class="navigation-element"><a href="#">Converter</a></li>';
-    var e5 = '<li class=navigation-element"><label class="switch"><input type="checkbox" id="select"><span class="slider"></span></label></li>'; /* adds a checkbox that styled as a slider switch to navigation bar> */
+    /* var e4 = '<li class="navigation-element"><a href="#">Converter</a></li>'; */
+    /* var e5 = '<li class=navigation-element"><label class="switch"><input type="checkbox" id="select"><span class="slider"></span></label></li>';  adds a checkbox that styled as a slider switch to navigation bar> */
     var c1 = '<br id="b1"><br id="b2"><div class="converter-bar" id="cb"></div>' /* Adds a div for a unit converter below the nav bar. */
     b.insertAdjacentHTML('afterbegin','<div id="nbsContainer"><ul class="navigation-bar" id="nbs">' + e1 + e2 + e3 + '</ul>' + c1 + '</div>');
 
