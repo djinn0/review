@@ -30,7 +30,7 @@ function generateMobileNavBar(){
     /* Elements of Navigation Bar e = element*/
     var b = document.getElementsByTagName("body")[0];
     var e1 = "<li class='navigation-element-mobile'><a href='index.html'>Home</a></li>"
-    var e2 = "<li class='navigation-element-mobile'><a href='list.html'>Recipe Index</a></li>"
+    var e2 = "<li class='navigation-element-mobile'><a href='list2.html'>Review Index</a></li>"
     var e3 = "<li class='navigation-element-mobile'><a href='glossary.html'>Glossary</a></li>"
     var e4 = "<li class='navigation-element-mobile'><a href='#' class='con'>Converter</a><label class='Mswitch'><input type='checkbox' id='select'><span class='slider'></span></label></li>"
     var c1 = "<div class='converter-bar' id='cb'></div>"
