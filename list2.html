@@ -106,7 +106,7 @@
         </ul>
       </div>
       <div class='f2'>
-        <img id='mainImage' src="plateLogo2.jpg">
+        <img id='mainImage' src="mainImage.jpg">
       </div>
     </div>
     
@@ -114,16 +114,16 @@
       /*Display Recipe image when moused over */
       /*note an event listener will need to be added for every recipe in the list */
         var r1 = document.getElementById('review1');
-        r1.addEventListener("mouseover", function() { changeImage('GermanPancake.jpg'); });
-        r1.addEventListener("mouseout", function(){ changeImage('plateLogo2.jpg'); });
+        r1.addEventListener("mouseover", function() { changeImage('image1.jpg'); });
+        r1.addEventListener("mouseout", function(){ changeImage('mainImage.jpg'); });
       /* space */
         var r2 = document.getElementById('review2');
-        r2.addEventListener("mouseover", function() { changeImage('pupusa.jpg'); });
-        r2.addEventListener("mouseout", function(){ changeImage('plateLogo2.jpg'); });
+        r2.addEventListener("mouseover", function() { changeImage('image2.jpg'); });
+        r2.addEventListener("mouseout", function(){ changeImage('mainImage.jpg'); });
       /* space */
         var r3 = document.getElementById('spaghetticarbonara');
-        r3.addEventListener("mouseover", function() { changeImage('spaghettiCarbonara.jpg'); });
-        r3.addEventListener("mouseout", function(){ changeImage('plateLogo2.jpg'); });
+        r3.addEventListener("mouseover", function() { changeImage('image3.jpg'); });
+        r3.addEventListener("mouseout", function(){ changeImage('mainImage.jpg'); });
       
       /* Changes the source image */
       function changeImage(newImage){
