@@ -13,16 +13,16 @@
       }
 
       h1.content{
-        font-size: 1.5em;
+        font-size: 2em;
       }
       
       h2.content{
-        font-size: 1.5em;
+        font-size: 2em;
       }
 
       p.content{
         margin-bottom: 2vh;
-        font-size: 1.5em;
+        font-size: 2em;
       }
     
       
@@ -49,15 +49,15 @@
         }
         
         h1 {
-          font-size: 12vmin;
+          font-size: 20vmin;
         }
 
         h2 {
-          font-size: 11vmin;
+          font-size: 18vmin;
         }
         
         p {
-          font-size: 8vmin;
+          font-size: 12vmin;
        }
 
         
