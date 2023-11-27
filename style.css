@@ -50,6 +50,12 @@
           margin: auto;
           width: 90%;
         }
+
+        .title {
+          margin: auto;
+          width: 90%;
+          font-size: 22vmim;
+        }
         
         h1 {
           font-size: 20vmin;
