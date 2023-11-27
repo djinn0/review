@@ -11,3 +11,34 @@
         margin: auto; /* centers content */
         width: 60%;   /* sets width of content */
       }
+
+/* Margin div used for spacing content, add a empty div at the start of HTML file with id m */
+      #m {
+        height: 3vh;
+        width: 100%;
+        background-color: powderblue;
+      }
+      
+/* Styling for mobile content */
+       @media only screen and (max-width: 1000px){
+         body{
+         margin: 0;
+         padding: 0;
+         background-color: white;
+         }
+       
+        .content{
+          margin: auto;
+          width: 90%;
+        }
+        
+        h1 {
+          font-size: 9vmin;
+        }
+        
+        p {
+          font-size: 6vmin;
+       }
+
+        
+      }
