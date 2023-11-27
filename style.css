@@ -12,6 +12,22 @@
         width: 60%;   /* sets width of content */
       }
 
+      h1.content{
+        font-size: 1.5em;
+      }
+      
+      h2.content{
+        font-size: 1.5em;
+      }
+      
+      p.content{
+        margin-bottom: 2vh;
+        font-size: 1.5em;
+      }
+    
+      
+
+
 /* Margin div used for spacing content, add a empty div at the start of HTML file with id m */
       #m {
         height: 3vh;
