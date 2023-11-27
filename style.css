@@ -24,7 +24,10 @@
         margin-bottom: 2vh;
         font-size: 2em;
       }
-    
+
+      ul.content {
+        font-size: 2em;
+      }
       
 
 
