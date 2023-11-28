@@ -38,10 +38,12 @@
       
       
       ul.content{
-          list-style-type: none;
-          font-size: 2em;
+        list-style-type: none;
       }
-
+      li.content{
+        font-size 1.5em;
+      }
+      
       #pro li{ 
         list-style-type: none; 
         font-size: 1.5em;
@@ -88,7 +90,7 @@
         .title {
           margin: auto;
           width: 90%;
-          color: green;
+          color: blue;
           font-size: 10vmin;
         }
         
@@ -97,11 +99,11 @@
         }
 
         h2.content {
-          font-size: 9vmin;
+          font-size: 8vmin;
         }
         
         p.content {
-          font-size: 7vmin;
+          font-size: 6vmin;
         }
        
        }
