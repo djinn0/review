@@ -39,13 +39,13 @@
       
       li.content{
         color: blue;
-        font-size: 1.5em;
+        font-size: 2em;
         list-style-type: none;
       }
 
       #pro li{ 
         list-style-type: none; 
-        font-size: 1.5em;
+        font-size: 2em;
       } 
       
       /* Adds green checkmark to pros list*/
@@ -56,7 +56,7 @@
 
       #con li{
         list-style-type: none; 
-        font-size: 1.5em;
+        font-size: 2em;
       }
 
       /* Adds red x to cons list  */
@@ -90,7 +90,7 @@
           margin: auto;
           width: 90%;
           color: blue;
-          font-size: 22vmin;
+          font-size: 16vmin;
         }
         
         h1 {
