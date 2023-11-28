@@ -37,7 +37,7 @@
       }
       
       
-      li.content{
+      ul.content{
           list-style-type: none;
           font-size: 2em;
       }
@@ -88,7 +88,7 @@
         .title {
           margin: auto;
           width: 90%;
-          color: green;
+          color: purple;
           font-size: 12vmin;
         }
         
