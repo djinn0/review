@@ -14,7 +14,7 @@
       	margin: auto;
       	width: 60%;
       	font-size: 3.5em;
-      	color: blue;
+      	color: purple;
       }
       
       /* content styling */
@@ -41,12 +41,12 @@
         list-style-type: none;
       }
       li.content{
-        font-size 1.5em;
+        font-size: 2em;
       }
       
       #pro li{ 
         list-style-type: none; 
-        font-size: 1.5em;
+        font-size: 2em;
       } 
       
       /* Adds green checkmark to pros list*/
@@ -57,7 +57,7 @@
 
       #con li{
         list-style-type: none; 
-        font-size: 1.5em;
+        font-size: 2em;
       }
 
       /* Adds red x to cons list  */
