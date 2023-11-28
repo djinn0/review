@@ -5,7 +5,6 @@
         background-color: white;
       }
 
-
       /* content styling */
       .content{
         margin: auto; /* centers content */
@@ -29,7 +28,37 @@
         font-size: 2em;
       }
       
+      li.content{
+        color: blue;
+        font-size: 1.5em;
+        list-style-type: none;
+      }
+      #pro li{ 
+        list-style-type: none; 
+        font-size: 1.5em;
+      } 
+      
+      /* Adds green checkmark to pros list*/
+      #pro li:before {
+        content: "\2714  ";
+        color: green;   
+      }
 
+      #con li{
+        list-style-type: none; 
+        font-size: 1.5em;
+      }
+
+      /* Adds red x to cons list  */
+      #con li:before { 
+        content: "\2718  "; 
+        color: red;             
+      }
+
+      img{
+        max-width: 100%;
+        height: auto;
+      }
 
 /* Margin div used for spacing content, add a empty div at the start of HTML file with id m */
       #m {
