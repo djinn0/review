@@ -88,20 +88,20 @@
         .title {
           margin: auto;
           width: 90%;
-          color: blue;
+          color: green;
           font-size: 10vmin;
         }
         
         h1.content {
-          font-size: 12vmin;
+          font-size: 10vmin;
         }
 
         h2.content {
-          font-size: 10vmin;
+          font-size: 9vmin;
         }
         
         p.content {
-          font-size: 8vmin;
+          font-size: 7vmin;
         }
        
        }
