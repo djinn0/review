@@ -14,7 +14,7 @@
       	margin: auto;
       	width: 60%;
       	font-size: 3.5em;
-      	color: purple;
+      	color: blue;
       }
       
       /* content styling */
@@ -88,7 +88,7 @@
         .title {
           margin: auto;
           width: 90%;
-          color: purple;
+          color: blue;
           font-size: 10vmin;
         }
         
@@ -101,8 +101,14 @@
         }
         
         p.content {
-          font-size: 5vmin;
+          font-size: 6vmin;
         }
-       
+
+        ul.content{
+        font-size: 6vmin;
+        }
+             
+
+             
        }
 
