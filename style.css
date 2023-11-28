@@ -1,10 +1,15 @@
 /* styling */
- body{
+      body{
         margin: 0;
         padding: 0;
         background-color: white;
       }
 
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+      
       /* content styling */
       .content{
         margin: auto; /* centers content */
@@ -23,16 +28,14 @@
         margin-bottom: 2vh;
         font-size: 2em;
       }
-
-      ul.content {
-        font-size: 2em;
-      }
+      
       
       li.content{
         color: blue;
         font-size: 1.5em;
         list-style-type: none;
       }
+
       #pro li{ 
         list-style-type: none; 
         font-size: 1.5em;
@@ -55,10 +58,6 @@
         color: red;             
       }
 
-      img{
-        max-width: 100%;
-        height: auto;
-      }
 
 /* Margin div used for spacing content, add a empty div at the start of HTML file with id m */
       #m {
@@ -97,6 +96,7 @@
         
         p {
           font-size: 12vmin;
+        }
        }
 
         
