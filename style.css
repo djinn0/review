@@ -14,7 +14,7 @@
       	margin: auto;
       	width: 60%;
       	font-size: 3.5em;
-      	color: green;
+      	color: purple;
       }
       
       /* content styling */
@@ -36,17 +36,17 @@
         font-size: 2em;
       }
       
-      
+
+      /*styling for pros and cons nested list */
       ul.content{
         list-style-type: none;
         font-size: 2em;
       
       }
 
-      /* #pro li{ 
+      #pro li{ 
         list-style-type: none; 
-        font-size: 2em;
-      } */
+      } 
       
       /* Adds green checkmark to pros list*/
       #pro li:before {
@@ -54,10 +54,9 @@
         color: green;   
       }
 
-     /* #con li{
+      #con li{
         list-style-type: none; 
-        font-size: 2em;
-      }*/
+      }
 
       /* Adds red x to cons list  */
       #con li:before { 
@@ -89,7 +88,7 @@
         .title {
           margin: auto;
           width: 90%;
-          color: blue;
+          color: purple;
           font-size: 10vmin;
         }
         
@@ -98,11 +97,11 @@
         }
 
         h2.content {
-          font-size: 7vmin;
+          font-size: 6vmin;
         }
         
         p.content {
-          font-size: 6vmin;
+          font-size: 5vmin;
         }
        
        }
