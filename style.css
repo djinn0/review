@@ -6,8 +6,15 @@
       }
 
       img{
-        max-width: 100%;
+      	max-width: 100%;
         height: auto;
+      }
+
+      .title {
+      	margin: auto;
+      	width: 60%;
+      	font-size: 3.5em;
+      	color: red;
       }
       
       /* content styling */
