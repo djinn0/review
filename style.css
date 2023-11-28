@@ -38,9 +38,8 @@
       
       
       li.content{
-        color: blue;
-        font-size: 2em;
-        list-style-type: none;
+          list-style-type: none;
+          font-size: 2em;
       }
 
       #pro li{ 
@@ -89,7 +88,7 @@
         .title {
           margin: auto;
           width: 90%;
-          color: red;
+          color: green;
           font-size: 12vmin;
         }
         
