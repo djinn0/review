@@ -22,14 +22,19 @@
         text-align: center;
         
       }
+
+      details > div {
+        margin: auto;
+        width: 80%;
+        border: 2px solid purple;
+        background-color: green;
+        margin-top: 0;
+      }
       
       summary {
         list-style: none; /* Removes the disclosure triangle. */
         display: flex;
-        background-color: green;
         padding: 40px;
-        margin: auto;
-        width: 80%;
         justify-content: space-between; /* adds space between elements */
       }
 
@@ -41,16 +46,18 @@
   </head>
   <body>
     <h1>Title</h1>
-    <div class=’container'>
       <details>
         <summary>Question</summary>
-        <p>This is the Answer to the question</p>
+        <div>
+          <p>This is the Answer to the question</p>
+        </div>
+        
       </details>
       
-    </div>
     
     
-    <h1>Test 9</h1>
+    
+    <h1>Test 7</h1>
 
     
   </body>
