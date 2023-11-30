@@ -16,11 +16,11 @@
       details > summary {
         background-color: powderblue;
         cursor: pointer;
-        /* padding: .5rem 1rem; */
         margin: auto;
         width: 80%;
         text-align: center;
         padding: 0.5rem 1rem;
+        border: 2px solid none solid none black;
       }
 
       details > div {
@@ -41,6 +41,10 @@
       summary:after{
         content: "\002B";
       }
+
+      details[open] summary:after{
+        content: "\00D7";
+      }
     
     </style>
   </head>
@@ -57,7 +61,7 @@
     
     
     
-    <h1>Test 9</h1>
+    <h1>Test 10</h1>
 
     
   </body>
