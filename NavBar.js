@@ -35,7 +35,7 @@ function generateMobileNavBar(){
     var e3 = "<li class='navigation-element-mobile'><a href='glossary.html'>Glossary</a></li>"
     var e4 = "<li class='navigation-element-mobile'><a href='#' class='con'>Converter</a><label class='Mswitch'><input type='checkbox' id='select'><span class='slider'></span></label></li>"
     var c1 = "<div class='converter-bar' id='cb'></div>"
-    b.insertAdjacentHTML('afterbegin',"<div id='nbmContainer'><ul class='navigation-bar-mobile' id='nbm'>" + e1 + e2 + "</ul>" + c1 + "</div>");
+    b.insertAdjacentHTML('afterbegin',"<div id='nbmContainer'><ul class='navigation-bar-mobile' id='nbm'>" + e1 + e2 + e3"</ul>" + c1 + "</div>");
 }
 
 function generateSyling()
