@@ -28,7 +28,7 @@ function generateMobileNavBar(){
     var b = document.getElementsByTagName("body")[0];
     var e1 = "<li class='navigation-element-mobile'><a href='index.html'>Home</a></li>"
     var e2 = "<li class='navigation-element-mobile'><a href='list2.html'>Reviews</a></li>"
-    var e3 = "<li class='navigation-element-mobile'><a href='glossary.html'>Glossary</a></li>"
+    var e3 = "<li class='navigation-element-mobile'><a href='faq.html'>FAQs</a></li>"
     var c1 = "<div class='converter-bar' id='cb'></div>"
     b.insertAdjacentHTML('afterbegin',"<div id='nbmContainer'><ul class='navigation-bar-mobile' id='nbm'>" + e1 + e2 + e3 + "</ul>" + c1 + "</div>");
 }
