@@ -12,7 +12,7 @@ function generateSelectorNavBar() {
     /* - Elements of Navigation bar  (e = Element, edc = dropdown content, dm = dropdown menu)*/
     var b = document.getElementsByTagName("body")[0];
     var h = document.getElementsByTagName('head')[0];
-    var e1 = '<li class="navigation-element"><a href="index.html">test 2</a></li>';
+    var e1 = '<li class="navigation-element"><a href="index.html">test 3</a></li>';
     var e2 = '<li class="navigation-element"><a href="template.html">New Reviews</a></li>';
     var edc1 = '<a href="list2.html">Reviews</a>'; 
     var edc2 = '<a href="faq.html">FAQs</a>'; 
@@ -29,7 +29,6 @@ function generateMobileNavBar(){
     var e1 = "<li class='navigation-element-mobile'><a href='index.html'>Home</a></li>"
     var e2 = "<li class='navigation-element-mobile'><a href='list2.html'>Reviews</a></li>"
     var e3 = "<li class='navigation-element-mobile'><a href='glossary.html'>Glossary</a></li>"
-    var e4 = "<li class='navigation-element-mobile'><a href='#' class='con'>Converter</a><label class='Mswitch'><input type='checkbox' id='select'><span class='slider'></span></label></li>"
     var c1 = "<div class='converter-bar' id='cb'></div>"
     b.insertAdjacentHTML('afterbegin',"<div id='nbmContainer'><ul class='navigation-bar-mobile' id='nbm'>" + e1 + e2 + e3 + "</ul>" + c1 + "</div>");
 }
@@ -64,63 +63,6 @@ function generateSyling()
     /* insert styling */
     s.insertAdjacentHTML('beforeend', sn1 + sn2 + sn3 + sn4 + sn5 + sn6 + sn7 + sm1 + sm2 + sm3 + sm5); 
 
-}
-
-function generateConverter(){
-    /* Converter contents */
-    var d = document.getElementById('cb');
-    var inVal = '<input id="inputValue" type="number" value="1" min="0" max="10"></input>';
-    var o1 = '<option>Cup</option>', o2 = '<option>Quart</option>', o3 = '<option>Gallon</option>', o4 ='<option>Ounce</option>', o5 = '<option>Milliliter</option>', o6 = '<option>Table Spoon</option>', o7 ='<option>Tea Spoon</option>';
-    var inType = '<select id="inputType">' + o1 + o2 + o3 + o4 + o5 + o6 + o7 + '</select>';
-    var outType = '<select id="outputType">' + o1 + o2 + o3 + o4 + o5 + o6 + o7 + '</select>';
-    var cs = document.getElementById('select'); 
-    var s = document.getElementsByTagName("style")[0];
-
-    if (cs.checked == true){ /* If the switch is on generate converter bar */
-        d.insertAdjacentHTML('afterbegin', 'Convert ' + inVal + inType + ' to ' + outType + ' <button id="cbtn">&rarr;</button>' + ': ' +  '<span id="out"></span>');
-        document.getElementById('cbtn').addEventListener('click', convert);
-        /* Converter styling (scb = styling converter bar) */
-        var scb1 = ' .converter-bar{position: fixed; width: 100%; background-color: #333; color: white; padding: 6px 12px; margin: 0; z-index: 10;}'
-        s.insertAdjacentHTML('beforeend', scb1)
-        d.classList.add('converter-bar')
-    }
-    else {
-        d.innerHTML = '';
-        d.classList.remove('converter-bar'); /*this appears to completly remove the class not just the styling*/
-    }
-}
-
-function convert(){
-    var val = document.getElementById('inputValue').value;
-    var inVal = Number(val);
-    var inType = document.getElementById('inputType').value;
-    var outType = document.getElementById('outputType').value;
-    var outVal = 0;
-    var y = 0;
-    var z = 0;
-    var dis = document.getElementById('display');
-                
-    
-    /* Convert input value to cups */ 
-    if (inType == 'Cup'){y = inVal}
-    else if (inType == 'Quart'){y = inVal * 4}
-    else if (inType == 'Gallon'){y = inVal * 16}
-    else if (inType == 'Ounce'){y = inVal / 8}
-    else if (inType == 'Milliliter'){y = inVal / 236.588 }
-    else if (inType == 'Table Spoon'){y= inval / 16}
-    else if (inType == 'Tea Spoon'){y = inVal / 48}
-    
-    /* Convert intermediate value in cups into final value */
-    if (outType == 'Cup'){z = y}
-    else if (outType == 'Quart'){z = y / 4}
-    else if (outType == 'Gallon'){z = y / 16}
-    else if (outType == 'Ounce'){z = y * 8}
-    else if (outType == 'Milliliter'){z = y * 236.588 }
-    else if (outType == 'Table Spoon'){z = y * 16}
-    else if (outType == 'Tea Spoon'){z = y * 48}
-    
-    /* display output */
-    document.getElementById('out').innerHTML = z + ' ' + outType + '(s)';
 }
 
 
