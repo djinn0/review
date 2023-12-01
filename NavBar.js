@@ -4,9 +4,6 @@ window.addEventListener('load', (event) => {
     if (window.innerWidth < 1000){generateMobileNavBar();}
     else{generateSelectorNavBar();}
     generateSyling();
-    var cs = document.getElementById('select');
-    cs.addEventListener('click', generateConverter); 
-    window.addEventListener('resize', replaceNavBar);
 });
 
 
@@ -15,7 +12,7 @@ function generateSelectorNavBar() {
     /* - Elements of Navigation bar  (e = Element, edc = dropdown content, dm = dropdown menu)*/
     var b = document.getElementsByTagName("body")[0];
     var h = document.getElementsByTagName('head')[0];
-    var e1 = '<li class="navigation-element"><a href="index.html">Home</a></li>';
+    var e1 = '<li class="navigation-element"><a href="index.html">test 1</a></li>';
     var e2 = '<li class="navigation-element"><a href="template.html">New Reviews</a></li>';
     var edc1 = '<a href="list2.html">Index</a>'; 
     var edc2 = '<a href="glossary.html">Glossary</a>'; 
