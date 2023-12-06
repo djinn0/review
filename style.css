@@ -35,7 +35,15 @@
         margin-bottom: 2vh;
         font-size: 1.5em;
       }
-      
+
+      /* Special content styling */ 
+      h2.contentS {
+        font-size: 1.5em;      
+      }
+
+      p.contentS {
+        font-size: 1.5em;   
+      }
 
       /*styling for pros and cons nested list */
       ul.content{
@@ -107,7 +115,15 @@
         ul.content{
         font-size: 6vmin;
         }
-             
+
+        /* Special content mobile styling */ 
+        h2.contentS {
+          font-size: 5vmin;      
+        }
+  
+        p.contentS {
+          font-size: 4vmin;   
+        }
 
              
        }
