@@ -17,13 +17,12 @@
       }
       
       .grid-item {
+        position: relative;
         border: 1px solid rgba(0, 0, 0, 0.8);
-        font-size: 30px;
-        text-align: center;
         height: 38vh;
         width: 38vh;
         margin: 1vh;
-        gap: 0vh;
+        gap: 0vh; 
       }
 
       a.thumbnail{
@@ -32,6 +31,10 @@
       }
 
         #test-text {
+          position: absolute; 
+          top: 50%; 
+          left: 50%; 
+          transform: translate(-50%, -50%); 
           color: red;
           z-index: 4;
         }
