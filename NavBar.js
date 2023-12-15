@@ -15,8 +15,9 @@ function generateSelectorNavBar() {
     var e1 = '<li class="navigation-element"><a href="index.html">test 3</a></li>';
     var e2 = '<li class="navigation-element"><a href="template.html">New Reviews</a></li>';
     var edc1 = '<a href="list2.html">Reviews</a>'; 
-    var edc2 = '<a href="faq.html">FAQs</a>'; 
-    var edm = '<div class="dropdown-content">' + edc1 + edc2 + '</div>';
+    var edc2 = '<a href="ArticleList.html">Articles</a>'; 
+    var edc3 = '<a href="gridPractice2.html">About</a>';
+    var edm = '<div class="dropdown-content">' + edc1 + edc2 + edc3 + '</div>';
     var e3 = '<li class="navigation-element" id="dropdown"><a href="#">Menu&#9662;</a>' + edm + '</li>';
     var c1 = '<br id="b1"><br id="b2"><div class="converter-bar" id="cb"></div>' /* Adds a div for a unit converter below the nav bar. */
     b.insertAdjacentHTML('afterbegin','<div id="nbsContainer"><ul class="navigation-bar" id="nbs">' + e1 + e2 + e3 + '</ul>' + c1 + '</div>');
