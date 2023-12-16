@@ -114,7 +114,7 @@
         }
 
         ul.content{
-        font-size: 6vmin;
+        font-size: 5vmin;
         }
 
         /* Special content mobile styling */ 
@@ -125,6 +125,7 @@
         p.contentS {
           font-size: 4vmin;   
         }
+
 
              
        }
