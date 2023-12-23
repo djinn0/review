@@ -30,7 +30,7 @@ function generateFooter()
     else{
         var sf1 ='.footer-bar{list-style-type: none; margin: 0; padding: 0; background-color: #333; width: 100%; position: fixed; bottom: 0;}';
     }
-    var sf2 ='.footer-element{display: inline-block; padding: 8px; font-size: 5vmin}';
+    var sf2 ='.footer-element{display: inline-block; padding: 8px; font-size: 5vmin; }';
     var sf3 ='.footer-element a{color: white; text-decoration: none; }';
     var sf4 ='.footer-element a:hover{}';
     s.insertAdjacentHTML('beforeend', sf1 + sf2 + sf3 + sf4);
