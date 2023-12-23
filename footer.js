@@ -13,8 +13,8 @@ function generateFooter()
     var x = document.getElementsByTagName("body")[0];
     let d = new Date();
     let n = d.getFullYear(); /* Adds current year to footer */
-    let f1 = `<li class="footer-element"><a href="https://www.linkedin.com/in/david-redd">&copy David Redd ${n}</a></li>`
-    let f2 = '<li class="footer-element"><a href="about.html">test 1</a></li>'
+    let f1 = `<li class="footer-element"><a href="https://www.linkedin.com/in/david-redd">&copy SexToyAhoy ${n}</a></li>`
+    let f2 = '<li class="footer-element"><a href="about.html">test 2</a></li>'
     let f3 = '<li class="footer-element"><a href="aboutme.html">Contact</a></li>'
     x.insertAdjacentHTML('beforeend','<ul class="footer-bar" id="fb">' + f1 + f2 + f3 + '</ul>');
 
@@ -30,7 +30,7 @@ function generateFooter()
     else{
         var sf1 ='.footer-bar{list-style-type: none; margin: 0; padding: 0; background-color: #333; width: 100%; position: fixed; bottom: 0;}';
     }
-    var sf2 ='.footer-element{display: inline-block; padding: 8px; font-size: 5vmin; }';
+    var sf2 ='.footer-element{display: inline-block; padding: 8px; font-size: 4vh; }';
     var sf3 ='.footer-element a{color: white; text-decoration: none; }';
     var sf4 ='.footer-element a:hover{}';
     s.insertAdjacentHTML('beforeend', sf1 + sf2 + sf3 + sf4);
