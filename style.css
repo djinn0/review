@@ -6,7 +6,7 @@
       }
 
       img{
-      	max-width: 100%;
+        max-width: 100%;
         height: auto;
       }
 
@@ -16,6 +16,14 @@
       	font-size: 3.5em;
       	color: purple;
       }
+
+      .date {
+        width: 50%;
+        font-size: 1.5;
+        text-align: center;
+        color: #4e4e4e;
+        margin-bottom: 2vh;
+      }
       
       /* content styling */
       .content{
@@ -24,7 +32,7 @@
       }
 
       h1.content{
-        font-size: 1.5em;
+        font-size: 1.75em;
       }
       
       h2.content{
@@ -100,9 +108,13 @@
           color: blue;
           font-size: 9vmin;
         }
+
+        .date {
+          font-size: 5vmin
+        }
         
         h1.content {
-          font-size: 10vmin;
+          font-size: 8vmin;
         }
 
         h2.content {
