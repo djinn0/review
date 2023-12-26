@@ -20,7 +20,7 @@
       .date {
         width: 50%;
         font-size: 1.5;
-        text-align: center;
+        margin: auto;
         color: #4e4e4e;
         margin-bottom: 2vh;
       }
@@ -111,6 +111,8 @@
 
         .date {
           font-size: 5vmin
+          width: 90%;
+          text-align: center;
         }
         
         h1.content {
