@@ -6,9 +6,60 @@
 
     <script src="footer.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style> </style>
+    <style>
+    details > summary {
+        margin: auto;
+        margin-bottom: 4vh; /* adds space between summary blocks */
+        width: 100%;
+        text-align: center;
+
+        background-color: #333;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        /* font-size: 1.5em; */
+        
+      }
+
+      details > div {
+        margin: auto;
+        width: 100%;
+        border-bottom: 2px solid black;
+        background-color: white;
+        margin-top: 0;
+        padding: 1rem;
+        /* font-size: 1.5em; */
+      }
+      
+      summary {
+        list-style: none; /* Removes the disclosure triangle. */
+        display: flex;
+        justify-content: space-between; /* adds space between elements */
+      }
+
+      summary:after{
+        content: "\2630";
+      }
+
+      details[open] summary:after{
+        content: "\00D7";
+      }
+    
+    
+    
+    
+    </style>
   </head>
   <body>
+    <details>
+        <summary>Question2</summary>
+        <div>
+          <p class='contentS'>Reviews</p>
+          <p class='contentS'>Articles</p>
+          <p class='contentS'>about</p>
+          
+        </div>
+    </details>
+
     
     <div id='m'></div>
     <h1 class='content'>Test 1</h1>
