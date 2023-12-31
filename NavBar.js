@@ -23,15 +23,23 @@ function generateSelectorNavBar() {
     b.insertAdjacentHTML('afterbegin','<div id="nbsContainer"><ul class="navigation-bar" id="nbs">' + e1 + e2 + e3 + '</ul>' + c1 + '</div>');
 
 }
-
-function generateMobileNavBar(){
+/*
+function generateMobileNavBar(){ */
     /* Elements of Navigation Bar e = element*/
-    var b = document.getElementsByTagName("body")[0];
+    /*var b = document.getElementsByTagName("body")[0];
     var e1 = "<li class='navigation-element-mobile'><a href='index.html'>Home</a></li>"
     var e2 = "<li class='navigation-element-mobile'><a href='list2.html'>Reviews</a></li>"
     var e3 = "<li class='navigation-element-mobile'><a href='faq.html'>FAQs</a></li>"
     var c1 = "<div class='converter-bar' id='cb'></div>"
     b.insertAdjacentHTML('afterbegin',"<div id='nbmContainer'><ul class='navigation-bar-mobile' id='nbm'>" + e1 + e2 + e3 + "</ul>" + c1 + "</div>");
+}*/
+
+function generateMobileNavBar(){
+  var b = document.getElementsByTagName("body")[0];
+  var e1 = "<a class='test' href='list2.html'>Reviews</a>”;
+  var e2 = "<a class='test' href='ArticleList2.html'>Articles</a>";
+  var e3 = "<a class='test' href='gridPractice2.html'>About</a>";
+  b.insertAdjacentHTML('afterbegin', "<details><summary>Home</summary><div>" + e1 + e2 + e3 + "</div></details>");
 }
 
 function generateSyling()
@@ -47,11 +55,18 @@ function generateSyling()
     var ss7 = 'input:checked + .slider:before { transform: translateX(16px); }'
 
     /* Styling of mobile Navigation Bar (sm = Styling Mobile) */
-    var sm1 = '.navigation-bar-mobile{ list-style-type: none; margin: 0; padding: 0; width: 100%; z-index: 11; }';
+    /* var sm1 = '.navigation-bar-mobile{ list-style-type: none; margin: 0; padding: 0; width: 100%; z-index: 11; }';
     var sm2 = '.navigation-element-mobile{ padding: 8px 8px 8px 20px; background-color: #333; font-size: 36px; text-align: left; }'; 
-    var sm3 = '.navigation-element-mobile a{ text-decoration: none; color: white; }';
+    var sm3 = '.navigation-element-mobile a{ text-decoration: none; color: white; }'; */
     /*var sm4 = '.navigation-element-mobile:hover{ background-color: #111; padding: 8px; }';*/
-    var sm5 = '.con{ padding-right: 8px; }' 
+    /*var sm5 = '.con{ padding-right: 8px; }' */
+
+  var sm1 = "details > summary { margin: auto; width: 100%; text-align: center; color: white; font-size: 4vmin; background-color: #333; padding: 0.5rem 1rem;}";
+  var sm2 = "details > div { margin: auto; width: 100%; background-color: #333; margin-top: 0; padding: 1rem; color: white;}";
+  var sm3 = "summary {list-style: none; display: flex; justify-content: space-between; }";
+  var sm4 = "summary:after{ content: "\2630";}";
+  var sm5 = "details[open] summary:after{ content: "\00D7";}";
+  var sm6 = ".test{ font-size: 4vmin; text-decoration: none; color: white; margin-left: 2rem; display: block;}";
 
     /* - Styling of Navigation Bar (sn = Styling Navigation) */
     var sn1 = ' .navigation-bar { list-style-type: none; margin: 0; padding: 0; background-color: #333; position: fixed; top: 0; width: 100%; z-index: 11;} ';	
