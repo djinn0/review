@@ -1,6 +1,6 @@
 window.addEventListener('load', (event) => { 
     generateMobileNavBar();
-    generateStyling();
+    generateSyling();
 });
 
 function generateMobileNavBar(){
