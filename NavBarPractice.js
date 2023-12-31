@@ -1,8 +1,10 @@
 window.addEventListener('load', (event) => { 
-    generateMobileNavBar();
-    generateSyling();
+    /*generateMobileNavBar();*/
+    /*generateSyling();*/
+    test();
 });
 
+/*
 function generateMobileNavBar(){
   var b = document.getElementsByTagName("body")[0];
   var e1 = "<a class='test' href='list2.html'>Reviews</a>”;
@@ -20,4 +22,10 @@ function generateStyling(){
   var sm5 = "details[open] summary:after{ content: "\00D7";}";
   var sm6 = ".test{ font-size: 4vmin; text-decoration: none; color: white; margin-left: 2rem; display: block;}";
   s.insertAdjacentHTML('beforeend', sm1 + sm2 + sm3 + sm4 + sm5 + sm6 );
+}*/
+
+function test() {
+ var b = document.getElementsByTagName("body")[0];
+ b.insertAdjacentHTML('afterbegin', "<details><summary>summary</summary>these are the details</details>");
 }
+
