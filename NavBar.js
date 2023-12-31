@@ -23,17 +23,16 @@ function generateSelectorNavBar() {
     b.insertAdjacentHTML('afterbegin','<div id="nbsContainer"><ul class="navigation-bar" id="nbs">' + e1 + e2 + e3 + '</ul>' + c1 + '</div>');
 
 }
-/*
-function generateMobileNavBar(){ */
+
+function generateMobileNavBar(){
     /* Elements of Navigation Bar e = element*/
-    /*var b = document.getElementsByTagName("body")[0];
+    var b = document.getElementsByTagName("body")[0];
     var e1 = "<li class='navigation-element-mobile'><a href='index.html'>Home</a></li>"
     var e2 = "<li class='navigation-element-mobile'><a href='list2.html'>Reviews</a></li>"
     var e3 = "<li class='navigation-element-mobile'><a href='faq.html'>FAQs</a></li>"
     var c1 = "<div class='converter-bar' id='cb'></div>"
     b.insertAdjacentHTML('afterbegin',"<div id='nbmContainer'><ul class='navigation-bar-mobile' id='nbm'>" + e1 + e2 + e3 + "</ul>" + c1 + "</div>");
-}*/
-
+}
 
 function generateSyling()
 {    var s = document.getElementsByTagName("style")[0];
@@ -50,10 +49,9 @@ function generateSyling()
     /* Styling of mobile Navigation Bar (sm = Styling Mobile) */
     var sm1 = '.navigation-bar-mobile{ list-style-type: none; margin: 0; padding: 0; width: 100%; z-index: 11; }';
     var sm2 = '.navigation-element-mobile{ padding: 8px 8px 8px 20px; background-color: #333; font-size: 36px; text-align: left; }'; 
-    var sm3 = '.navigation-element-mobile a{ text-decoration: none; color: white; }'; 
-    /* var sm4 = '.navigation-element-mobile:hover{ background-color: #111; padding: 8px; }';*/
+    var sm3 = '.navigation-element-mobile a{ text-decoration: none; color: white; }';
+    /*var sm4 = '.navigation-element-mobile:hover{ background-color: #111; padding: 8px; }';*/
     var sm5 = '.con{ padding-right: 8px; }' 
-
 
     /* - Styling of Navigation Bar (sn = Styling Navigation) */
     var sn1 = ' .navigation-bar { list-style-type: none; margin: 0; padding: 0; background-color: #333; position: fixed; top: 0; width: 100%; z-index: 11;} ';	
@@ -64,7 +62,7 @@ function generateSyling()
     var sn6 = ' #dropdown:hover .dropdown-content {display: block;}'; /*display menu content on hover */
     var sn7 = ' .dropdown-content a{display: block;}';
     /* insert styling */
-    s.insertAdjacentHTML('beforeend', sn1 + sn2 + sn3 + sn4 + sn5 + sn6 + sn7 + sm1 + sm2 + sm3 + sm4 + sm5 + sm6); 
+    s.insertAdjacentHTML('beforeend', sn1 + sn2 + sn3 + sn4 + sn5 + sn6 + sn7 + sm1 + sm2 + sm3 + sm5); 
 
 }
 
@@ -81,5 +79,6 @@ function replaceNavBar()
     else generateSelectorNavBar();
     
 }
+
 
 
