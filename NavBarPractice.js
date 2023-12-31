@@ -26,7 +26,7 @@ function generateStyling(){
 
 function test() {
  var b = document.getElementsByTagName("body")[0];
- var e1 = "<a class='test' href='list2.html'>Reviews</a>”;
-b.insertAdjacentHTML('afterbegin', "<details><summary>test 3</summary>" + e1 + "</details>");
+ var e1 = "<div>hello goodbye</div>";
+b.insertAdjacentHTML('afterbegin', "<details><summary>test 4</summary>" + e1 + "</details>");
 }
 
