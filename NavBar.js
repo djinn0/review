@@ -77,7 +77,7 @@ function generateSyling()
     var sn6 = ' #dropdown:hover .dropdown-content {display: block;}'; /*display menu content on hover */
     var sn7 = ' .dropdown-content a{display: block;}';
     /* insert styling */
-    s.insertAdjacentHTML('beforeend', sn1 + sn2 + sn3 + sn4 + sn5 + sn6 + sn7 + sm1 + sm2 + sm3 + sm5); 
+    s.insertAdjacentHTML('beforeend', sn1 + sn2 + sn3 + sn4 + sn5 + sn6 + sn7 + sm1 + sm2 + sm3 + sm4 + sm5 + sm6); 
 
 }
 
