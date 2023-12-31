@@ -4,9 +4,9 @@ window.addEventListener('load', (event) => {
 
 function generateMobileNavBar(){
   var b = document.getElementsByTagName("body")[0];
-  var e1 = '<div><a href='index.html'>Home</a></div>';
-  var e2 = '<div><a href='index.html'>Home</a></div>';
-  var e3 = '<div><a href='index.html'>Home</a></div>';
+  var e1 = "<a class='test' href='list2.html'>Reviews</a>”;
+  var e2 = "<a class='test' href='ArticleList2.html'>Articles</a>";
+  var e3 = "<a class='test' href='gridPractice2.html'>About</a>";
   b.insertAdjacentHTML('afterbegin',"<details><summary>Home</summary>" + e1 + e2 + e3 + "</details>");
 }
 
