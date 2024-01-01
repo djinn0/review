@@ -31,7 +31,9 @@ function style(){
   var sm2 = "details > div { margin: auto; width: 100%; background-color: #333; margin-top: 0; padding: 1rem; color: white;}";
   var sm3 = "summary {list-style: none; display: flex; justify-content: space-between; }";
   var sm4 = ".test{ font-size: 4vmin; text-decoration: none; color: pink; margin-left: 2rem; display: block;}";
-  s.insertAdjacentHTML('beforeend', sm1 + sm2 + sm3 + sm4);
+  var sm5 = "summary:after{ content: '\2630';}";
+  var sm6 = "details[open] summary:after{ content: '\00D7';}";
+  s.insertAdjacentHTML('beforeend', sm1 + sm2 + sm3 + sm4 + sm5 + sm6);
 }
 function test() {
  var b = document.getElementsByTagName("body")[0];
