@@ -2,7 +2,6 @@ window.addEventListener('load', (event) => {
     /*generateMobileNavBar();*/
     /*generateSyling();*/
     test();
-    style();
 });
 
 /*
@@ -27,6 +26,7 @@ function generateStyling(){
 
 function style(){
   var s = document.getElementsByTagName("style")[0]
+  var sm1 = "details > summary { margin: auto; width: 100%; text-align: center; color: white; font-size: 4vmin; background-color: #333; padding: 0.5rem 1rem;}";
   var sm1 = ".test{ font-size: 4vmin; text-decoration: none; color: pink; margin-left: 2rem; display: block;}";
   s.insertAdjacentHTML('beforeend', sm1 );
 }
@@ -35,6 +35,6 @@ function test() {
  var e1 = "<a class='test' href='index.html'>link 1</a>";
  var e2 = "<a class='test' href='index.html'>link 2</a>";
  var e3 = "<a class='test' href='index.html'>link 3</a>";
-b.insertAdjacentHTML('afterbegin', "<details><summary>test 12</summary>" + e1 + e2 + e3 + "</details>");
+b.insertAdjacentHTML('afterbegin', "<details><summary>test 13</summary><div>" + e1 + e2 + e3 + "</div></details>");
 }
 
