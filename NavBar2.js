@@ -30,7 +30,7 @@ function generateMobileNavBar(){
     var e1 = "<a class='test' href='index.html'>link 1</a>";
     var e2 = "<a class='test' href='index.html'>link 2</a>";
     var e3 = "<a class='test' href='index.html'>link 3</a>";
-    b.insertAdjacentHTML('afterbegin', "<details><summary>test 17</summary><div>" + e1 + e2 + e3 + "</div></details>");
+    b.insertAdjacentHTML('afterbegin', "<details><summary>test 18</summary><div>" + e1 + e2 + e3 + "</div></details>");
     }
 
 function generateSyling()
@@ -49,7 +49,7 @@ function generateSyling()
     var sm1 = "details > summary { margin: auto; width: 100%; text-align: center; color: white; font-size: 4vmin; background-color: #333; padding: 0.5rem 1rem;}";
     var sm2 = "details > div { margin: auto; width: 100%; background-color: #333; margin-top: 0; padding: 1rem; color: white;}";
     var sm3 = "summary {list-style: none; display: flex; justify-content: space-between; }";
-    var sm4 = ".test{ font-size: 4vmin; text-decoration: none; color: pink; margin-left: 2rem; display: block;}";
+    var sm4 = ".test{ font-size: 4vmin; text-decoration: none; color: white; margin-left: 2rem; display: block;}";
     var sm5 = 'summary:after{ content: "\u2630";}';
     var sm6 = 'details[open] summary:after{ content: "\u00D7";}';
 
