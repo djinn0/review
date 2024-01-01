@@ -2,6 +2,7 @@ window.addEventListener('load', (event) => {
     /*generateMobileNavBar();*/
     /*generateSyling();*/
     test();
+    style();
 });
 
 /*
@@ -24,11 +25,16 @@ function generateStyling(){
   s.insertAdjacentHTML('beforeend', sm1 + sm2 + sm3 + sm4 + sm5 + sm6 );
 }*/
 
+function style(){
+  var s = document.getElementsByTagName("style")[0]
+  var sm1 = ".test{ font-size: 4vmin; text-decoration: none; color: white; margin-left: 2rem; display: block;}";
+  s.insertAdjacentHTML('beforeend', sm1 );
+}
 function test() {
  var b = document.getElementsByTagName("body")[0];
  var e1 = "<a class='test' href='index.html'>link 1</a>";
- var e2 = "<a href='index.html'>link 2</a>";
- var e3 = "<a href='index.html'>link 3</a>";
-b.insertAdjacentHTML('afterbegin', "<details><summary>test 9</summary>" + e1 + e2 + e3 + "</details>");
+ var e2 = "<a class='test' href='index.html'>link 2</a>";
+ var e3 = "<a class='test' href='index.html'>link 3</a>";
+b.insertAdjacentHTML('afterbegin', "<details><summary>test 10</summary>" + e1 + e2 + e3 + "</details>");
 }
 
