@@ -27,9 +27,9 @@ function generateSelectorNavBar() {
 function generateMobileNavBar(){
     /* Elements of Navigation Bar e = element*/
     var b = document.getElementsByTagName("body")[0];
-    var e1 = "<a class='test' href='index.html'>link 1</a>";
-    var e2 = "<a class='test' href='index.html'>link 2</a>";
-    var e3 = "<a class='test' href='index.html'>link 3</a>";
+    var e1 = "<a class='test' href='list2.html'>Reviews</a>";
+    var e2 = "<a class='test' href='ArticleList2.html'>Articles</a>";
+    var e3 = "<a class='test' href='gridPractice2.html'>About</a>";
     b.insertAdjacentHTML('afterbegin', "<details><summary>test 19</summary><div>" + e1 + e2 + e3 + "</div></details>");
     }
 
