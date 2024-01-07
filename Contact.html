@@ -10,7 +10,7 @@
         var part1 = "sextoy";
         var part2 = "ahoy";
         var part3 = "@gmail.com";
-        document.getElementById("email").innerHTML = "" + part1 + part2 + part3 + "";
+        document.getElementById("email").innerHTML = "<a href=mailto:" + part1 + part2 + part3 + ">" + part1 + part2 + part3 + "</a>";
       }
       
     </script>
@@ -29,10 +29,10 @@
     <p class='content'>email me, my dudes</p>
    <button type="button" onclick="reveal()">Reveal email</button>
     
-    <p id='email'>suck my dick</p>
+    <p class='content' id='email'>suck my dick</p>
 
     
-    <h1 class='content'>Test 15</h1>
+    <h1 class='content'>Test 16</h1>
   </body>
 
 
