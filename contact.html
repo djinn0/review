@@ -12,10 +12,16 @@
         var part3 = "@gmail.com";
         document.getElementById("email").innerHTML = "<a href=mailto:" + part1 + part2 + part3 + ">" + part1 + part2 + part3 + "</a>";
       }
-      
     </script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style> </style>
+    <style>
+    .button{
+      background-color: #333;
+      color: white;
+      border-radius: 4px;
+      
+    }
+    </style>
   </head>
   <body>
     <div id='m'></div>
@@ -27,7 +33,7 @@
     <h1 class='title'>insert title here</h1>
     <h2 class='content'>Contact Me</h2>
     <p class='content'>If you have any questions about the toys I have reviewed, are interested in having me review an item, or just want to chat please </p>
-   <button type="button" onclick="reveal()">Reveal email</button>
+   <button class='button' type='button' onclick='reveal()'>Reveal email</button>
     
     <p class='content' id='email'>suck my dick</p>
 
