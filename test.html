@@ -35,6 +35,7 @@
     }
 
     @media only screen and (max-width: 1000px){
+      /*
       div.footer {
         bottom: 0;
         width: 100%;
@@ -42,15 +43,17 @@
         padding: 10px 20px;
         display: flex;
         justify-content: space-between;
-      }
+      }*/
 
-      div.footer > a {
+      #element > a {
         color: white;
         text-decoration: none;
         font-size: 5vmin;
         display: inline-block;
       }
-
+      #anchor {
+        font-size: 8vmin;
+      }
 
       
     }
@@ -66,8 +69,12 @@
     <h1 class='content'>Test 8</h1>
       
     <div class='footer'>
-      <a>hello world</a>
-      <a>goodbye sky</a>
+     <div id='anchor'>"\u2693"</div>
+     <div id='element'>
+       <a>hello world</a>
+       <a>goodbye sky</a>
+     </div>
+      
     </div>
     
   
