@@ -30,13 +30,14 @@ function generateMobileNavBar(){
     var e1 = "<a class='test' href='list2.html'>Reviews</a>";
     var e2 = "<a class='test' href='ArticleList2.html'>Articles</a>";
     var e3 = "<a class='test' href='gridPractice2.html'>About</a>";
-    b.insertAdjacentHTML('afterbegin', "<details><summary>test 19</summary><div>" + e1 + e2 + e3 + "</div></details>");
+    b.insertAdjacentHTML('afterbegin', "<details><summary>test 20</summary><div>" + e1 + e2 + e3 + "</div></details>");
     }
 
 function generateSyling()
 {    var s = document.getElementsByTagName("style")[0];
     
     /* Styling of mobile Navigation Bar (sm = Styling Mobile) */
+    var sm0 = "details { position: -webkit-sticky; position: sticky; top: 0; }";
     var sm1 = "details > summary { margin: auto; width: 100%; text-align: center; color: white; font-size: 4vmin; background-color: #333; padding: 0.5rem 1rem;}";
     var sm2 = "details > div { margin: auto; width: 100%; background-color: #333; margin-top: 0; padding: 1rem; color: white;}";
     var sm3 = "summary {list-style: none; display: flex; justify-content: space-between; }";
@@ -53,7 +54,7 @@ function generateSyling()
     var sn6 = ' #dropdown:hover .dropdown-content {display: block;}'; /*display menu content on hover */
     var sn7 = ' .dropdown-content a{display: block;}';
     /* insert styling */
-    s.insertAdjacentHTML('beforeend', sn1 + sn2 + sn3 + sn4 + sn5 + sn6 + sn7 + sm1 + sm2 + sm3 + sm4 + sm5 + sm6); 
+    s.insertAdjacentHTML('beforeend', sn1 + sn2 + sn3 + sn4 + sn5 + sn6 + sn7 + sm0 + sm1 + sm2 + sm3 + sm4 + sm5 + sm6); 
 
 }
 
