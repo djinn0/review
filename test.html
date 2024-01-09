@@ -24,16 +24,35 @@
       bottom: 0;
       width: 100%;
       background-color: #333;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
+      padding: 10px 20px;
     }
 
-    div.footer > div {
-      color: green;
+    div.footer > a {
+      color: white;
       text-decoration: none;
       font-size: 1.5em;
       display: inline-block;
+    }
+
+    @media only screen and (max-width: 1000px){
+      div.footer {
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      div.footer > a {
+        color: white;
+        text-decoration: none;
+        font-size: 5vmin;
+        display: inline-block;
+      }
+
+
+      
     }
       
     </style>
@@ -47,8 +66,8 @@
     <h1 class='content'>Test 8</h1>
       
     <div class='footer'>
-      <div><a>hello world</a></div>
-      <div><a>goodbye sky</a></div>
+      <a>hello world</a>
+      <a>goodbye sky</a>
     </div>
     
   
