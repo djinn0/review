@@ -13,9 +13,15 @@ function generateFooter()
   let n = d.getFullYear(); /* Adds current year to footer */
   let e1 = '<a href="contact.html">Contact</a>';
   let e2 = '<a href="disclosure.html">SexToyAhoy &copy' + n + '</a>';
-  let e3 = '<a href="disclosure.html">Disclosure 2</a>';
+  let e3 = '<a href="disclosure.html">Disclosure 3</a>';
   let element = '<div id="element">' + e1 + e2 + e3 + '</div>';
   x.insertAdjacentHTML('beforeend', '<div class="footer">' + anchor + element + '</div>');
+  var s = document.getElementsByTagName("style")[0];
+  s.insertAdjacentHTML('beforeend','div.footer {position: fixed; bottom: 0; width: 100%; background-color: #333; }' );
+  
+}
+    
+ function test() {
 
   /* styling */
   var s = document.getElementsByTagName("style")[0];
