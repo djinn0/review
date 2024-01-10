@@ -17,7 +17,21 @@ function generateFooter()
   let element = '<div id="element">' + e1 + e2 + e3 + '</div>';
   x.insertAdjacentHTML('beforeend', '<div class="footer">' + anchor + element + '</div>');
 
+  /* get content height */
+  const body = document.body;
+  const html = document.documentElement;
+  const contentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+  /* get screen height */
+  var screenHeight = screen.height; 
+  /* place footer at bottom of content or bottom of screen */
+  if (contentHeight > screenHeight){ let sf1 = 'div.footer { width: 100%; background-color: #333; }';}
+  else{ let sf1 = 'div.footer {position: fixed; bottom: 0; width: 100%; background-color: #333; }';}
+  /* additional Styling */  
+  let sf2 =  '#anchor{color: white; font-size: 6vmin; text-align: center;}';
+  let sf3 =  '#element { padding: 8px 20px; display: flex; justify-content: space-between; }';
+  let sf4 = '  #element > a { color: white; text-decoration: none; font-size: 4vmin; display: inline-block; }';
+    
   /* add styling */
   var s = document.getElementsByTagName("style")[0];
-  
+  s.insertAdjacentHTML('beforeend', sf1 + sf2 + sf3 + sf4);
 }
