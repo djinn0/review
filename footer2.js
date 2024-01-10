@@ -13,14 +13,17 @@ function generateFooter()
   let n = d.getFullYear(); /* Adds current year to footer */
   let e1 = '<a href="contact.html">Contact</a>';
   let e2 = '<a href="disclosure.html">SexToyAhoy &copy' + n + '</a>';
-  let e3 = '<a href="disclosure.html">Disclosure 4</a>';
+  let e3 = '<a href="disclosure.html">Disclosure 5</a>';
   let element = '<div id="element">' + e1 + e2 + e3 + '</div>';
   x.insertAdjacentHTML('beforeend', '<div class="footer">' + anchor + element + '</div>');
   
   /* styling */
   var s = document.getElementsByTagName("style")[0];
   var sf1 = 'div.footer {position: fixed; bottom: 0; width: 100%; background-color: #333; }';
-  s.insertAdjacentHTML('beforeend', sf1 );
+  var sf2 = '#anchor{color: white; font-size: 6vmin; text-align: center;}';
+  var sf3 = '#element { padding: 8px 20px; display: flex; justify-content: space-between; }';
+  var sf4 = '#element > a { color: white; text-decoration: none; font-size: 4vmin; display: inline-block; }';
+  s.insertAdjacentHTML('beforeend', sf1 + sf2 + sf3 + sf4 );
   
 }
     
