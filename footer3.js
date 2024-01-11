@@ -17,5 +17,5 @@ function generateFooter()
      var c1 = 'content';
   }
   
-  x.insertAdjacentHTML('beforeend', '<h1>' + c1 + contentHeight + ' ' + screenHeight '</h1>');
+  x.insertAdjacentHTML('beforeend', '<h1>' + contentHeight + ' ' + screenHeight '</h1>');
 }
