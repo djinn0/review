@@ -6,19 +6,16 @@ function generateFooter()
 {
     var x = document.getElementsByTagName("body")[0];
     
-    x.insertAdjacentHTML('beforeend', '<div class="footer">test 3</div>');
-
-  var s = document.getElementsByTagName("style")[0];
   /* content and screen heights */
   const body = document.body;
   const html = document.documentElement;
-  var contentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-  var screenHeight = screen.height; 
+  let contentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+  let screenHeight = screen.height; 
  if (screenHeight > contentHeight ) {
-     alert(hello world);
+     var c1 = 'screen';
   } else {
-    alert(goodbye sky);
+     var c1 = 'content';
   }
-  var sf1 = 'div.footer {position: fixed; bottom: 0; z-index: 11; width: 100%; background-color: green; }';
-  s.insertAdjacentHTML('beforeend', sf1);
+  
+  x.insertAdjacentHTML('beforeend', '<h1>' + c1 + contentHeight + ' ' + screenHeight '</h1>');
 }
