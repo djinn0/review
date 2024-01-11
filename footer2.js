@@ -25,9 +25,9 @@ function generateFooter()
   var contentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
   var screenHeight = screen.height; 
   if (screenHeight > contentHeight ) {
-    var sf1 = 'div.footer {position: fixed; bottom: 0; width: 100%; background-color: #333; }';
+    var sf1 = 'div.footer {position: fixed; bottom: 0; z-index: 11; width: 100%; background-color: #333; }';
   } else {
-    var sf1 = 'div.footer {width: 100%; background-color: #333; }';
+    var sf1 = 'div.footer {position: static; z-index 11; width: 100%; background-color: #333; }';
   }
   var sf2 = '#anchor{color: white; font-size: 1.75em; text-align: center;}';
   var sf3 = '#element { padding: 8px 40px; display: flex; justify-content: space-between; }';
