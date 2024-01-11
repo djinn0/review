@@ -17,5 +17,5 @@ function generateFooter()
      var c1 = 'content';
   }
   */
-  x.insertAdjacentHTML('beforeend', '<h1>Hello World</h1>');
+  x.insertAdjacentHTML('beforeend', '<h1>Goodbye sky</h1>');
 }
