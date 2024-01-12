@@ -16,15 +16,15 @@ function generateFooter()
   let a3 = html.clientHeight; <!-- doesn't change -->
   let a4 = html.scrollHeight;
   let a5 = html.offsetHeight;
- /*
+ 
     if (screenHeight > contentHeight ) {
      var c1 = 'screen';
   } else {
      var c1 = 'content';
   }
-  */
-  x.insertAdjacentHTML('beforeend', '<h1>Goodbye sky 3</h1>');
-    x.insertAdjacentHTML('beforeend', '<h1>' + screenHeight +'</h1>');
-    x.insertAdjacentHTML('beforeend', '<h1>' + contentHeight +'</h1>');
+
+  x.insertAdjacentHTML('beforeend', '<h1>Goodbye sky 4</h1>');
+    x.insertAdjacentHTML('beforeend', '<h1>' + screenHeight + c1 + '</h1>');
+    x.insertAdjacentHTML('beforeend', '<h1>' + contentHeight + c1 + '</h1>');
     x.insertAdjacentHTML('beforeend', '<h1>' + a1 + ' ' + a2 + ' ' + a3 + ' ' + a4 + ' ' + a5 + '</h1>');
 }
