@@ -12,7 +12,7 @@ function generateFooter()
   let contentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
   let screenHeight = screen.height; 
   let a1 = body.scrollHeight;
-  let a2 = body.offsetHeight;
+  let a2 = body.offsetHeight; <!-- minimum size 932 on desktop -->
   let a3 = html.clientHeight; <!-- doesn't change -->
   let a4 = html.scrollHeight;
   let a5 = html.offsetHeight;
