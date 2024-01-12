@@ -13,7 +13,7 @@ function generateFooter()
   let screenHeight = screen.height; 
   let a1 = body.scrollHeight;
   let a2 = body.offsetHeight;
-  let a3 = html.clientHeight;
+  let a3 = html.clientHeight; <!-- doesn't change -->
   let a4 = html.scrollHeight;
   let a5 = html.offsetHeight;
  /*
