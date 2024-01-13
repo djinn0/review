@@ -30,20 +30,20 @@ function generateMobileNavBar(){
     var e1 = "<a class='test' href='list2.html'>Reviews</a>";
     var e2 = "<a class='test' href='ArticleList2.html'>Articles</a>";
     var e3 = "<a class='test' href='gridPractice2.html'>About</a>";
-    b.insertAdjacentHTML('afterbegin', "<details><summary><a href='index.html'>test 22</a></summary><div>" + e1 + e2 + e3 + "</div></details>");
+    b.insertAdjacentHTML('afterbegin', "<details class='navigation'><summary class='navigation'><a href='index.html'>test 23</a></summary><div>" + e1 + e2 + e3 + "</div></details>");
     }
 
 function generateSyling()
 {    var s = document.getElementsByTagName("style")[0];
     
     /* Styling of mobile Navigation Bar (sm = Styling Mobile) */
-    var sm0 = "details { position: -webkit-sticky; position: sticky; top: 0; }";
-    var sm1 = "details > summary { margin: auto; width: 100%; text-align: center; color: white; font-size: 4vmin; background-color: #333; padding: 0.5rem 1rem; text-decoration: none; }";
-    var sm2 = "details > div { margin: auto; width: 100%; background-color: #333; margin-top: 0; padding: 1rem; color: white;}";
-    var sm3 = "summary {list-style: none; display: flex; justify-content: space-between; }";
+    var sm0 = "details.navigation { position: -webkit-sticky; position: sticky; top: 0; }";
+    var sm1 = "details.navigation > summary { margin: auto; width: 100%; text-align: center; color: white; font-size: 4vmin; background-color: #333; padding: 0.5rem 1rem; text-decoration: none; }";
+    var sm2 = "details.navigation > div { margin: auto; width: 100%; background-color: #333; margin-top: 0; padding: 1rem; color: white;}";
+    var sm3 = "summary.navigation {list-style: none; display: flex; justify-content: space-between; }";
     var sm4 = ".test{ font-size: 4vmin; text-decoration: none; color: white; margin-left: 2rem; display: block;}";
-    var sm5 = 'summary:after{ content: "\u2630";}';
-    var sm6 = 'details[open] summary:after{ content: "\u00D7";}';
+    var sm5 = 'summary.navigation:after{ content: "\u2630";}';
+    var sm6 = 'details.navigation[open] summary.navigation:after{ content: "\u00D7";}';
 
     /* - Styling of Navigation Bar (sn = Styling Navigation) */
     var sn1 = ' .navigation-bar { list-style-type: none; margin: 0; padding: 0; background-color: #333; position: fixed; top: 0; width: 100%; z-index: 11;} ';	
