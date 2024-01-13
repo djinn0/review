@@ -30,7 +30,7 @@ function generateMobileNavBar(){
     var e1 = "<a class='test' href='list2.html'>Reviews</a>";
     var e2 = "<a class='test' href='ArticleList2.html'>Articles</a>";
     var e3 = "<a class='test' href='gridPractice2.html'>About</a>";
-    b.insertAdjacentHTML('afterbegin', "<details class='navigation'><summary class='navigation'><a href='index.html'>test 24</a></summary><div>" + e1 + e2 + e3 + "</div></details>");
+    b.insertAdjacentHTML('afterbegin', "<details class='navigation'><summary class='navigation'><a href='index.html'>test 25</a></summary><div>" + e1 + e2 + e3 + "</div></details>");
     }
 
 function generateSyling()
@@ -42,9 +42,9 @@ function generateSyling()
     var sm2 = "details.navigation > div { margin: auto; width: 100%; background-color: #333; margin-top: 0; padding: 1rem; color: white;}";
     var sm3 = "summary.navigation {list-style: none; display: flex; justify-content: space-between; }";
     var sm4 = "summary.navigation > a { text-decoration: none; color: white; }";
-    var sm4 = ".test{ font-size: 4vmin; text-decoration: none; color: white; margin-left: 2rem; display: block;}";
-    var sm5 = 'summary.navigation:after{ content: "\u2630";}';
-    var sm6 = 'details.navigation[open] summary.navigation:after{ content: "\u00D7";}';
+    var sm5 = ".test{ font-size: 4vmin; text-decoration: none; color: white; margin-left: 2rem; display: block;}";
+    var sm6 = 'summary.navigation:after{ content: "\u2630";}';
+    var sm7 = 'details.navigation[open] summary.navigation:after{ content: "\u00D7";}';
 
     /* - Styling of Navigation Bar (sn = Styling Navigation) */
     var sn1 = ' .navigation-bar { list-style-type: none; margin: 0; padding: 0; background-color: #333; position: fixed; top: 0; width: 100%; z-index: 11;} ';	
@@ -55,7 +55,7 @@ function generateSyling()
     var sn6 = ' #dropdown:hover .dropdown-content {display: block;}'; /*display menu content on hover */
     var sn7 = ' .dropdown-content a{display: block;}';
     /* insert styling */
-    s.insertAdjacentHTML('beforeend', sn1 + sn2 + sn3 + sn4 + sn5 + sn6 + sn7 + sm0 + sm1 + sm2 + sm3 + sm4 + sm5 + sm6); 
+    s.insertAdjacentHTML('beforeend', sn1 + sn2 + sn3 + sn4 + sn5 + sn6 + sn7 + sm0 + sm1 + sm2 + sm3 + sm4 + sm5 + sm6 + sm7); 
 
 }
 
