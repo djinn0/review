@@ -30,7 +30,7 @@ function generateMobileNavBar(){
     var e1 = "<a class='test' href='list2.html'>Reviews</a>";
     var e2 = "<a class='test' href='ArticleList2.html'>Articles</a>";
     var e3 = "<a class='test' href='gridPractice2.html'>About</a>";
-    b.insertAdjacentHTML('afterbegin', "<details class='navigation'><summary class='navigation'><a href='index.html'>test 23</a></summary><div>" + e1 + e2 + e3 + "</div></details>");
+    b.insertAdjacentHTML('afterbegin', "<details class='navigation'><summary class='navigation'><a href='index.html'>test 24</a></summary><div>" + e1 + e2 + e3 + "</div></details>");
     }
 
 function generateSyling()
@@ -41,6 +41,7 @@ function generateSyling()
     var sm1 = "details.navigation > summary { margin: auto; width: 100%; text-align: center; color: white; font-size: 4vmin; background-color: #333; padding: 0.5rem 1rem; text-decoration: none; }";
     var sm2 = "details.navigation > div { margin: auto; width: 100%; background-color: #333; margin-top: 0; padding: 1rem; color: white;}";
     var sm3 = "summary.navigation {list-style: none; display: flex; justify-content: space-between; }";
+    var sm4 = "summary.navigation > a { text-decoration: none; color: white; }";
     var sm4 = ".test{ font-size: 4vmin; text-decoration: none; color: white; margin-left: 2rem; display: block;}";
     var sm5 = 'summary.navigation:after{ content: "\u2630";}';
     var sm6 = 'details.navigation[open] summary.navigation:after{ content: "\u00D7";}';
