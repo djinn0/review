@@ -15,7 +15,7 @@ function generateSelectorNavBar() {
     var e1 = '<li class="navigation-element"><a href="index.html">test 4</a></li>';
     var e2 = '<li class="navigation-element"><a href="template.html">New Reviews</a></li>';
     var edc1 = '<a href="list2.html">Reviews</a>'; 
-    var edc2 = '<a href="ArticleList.html">Articles</a>'; 
+    var edc2 = '<a href="ArticleList3.html">Articles</a>'; 
     var edc3 = '<a href="gridPractice2.html">About</a>';
     var edm = '<div class="dropdown-content">' + edc1 + edc2 + edc3 + '</div>';
     var e3 = '<li class="navigation-element" id="dropdown"><a href="#">Menu&#9662;</a>' + edm + '</li>';
@@ -28,7 +28,7 @@ function generateMobileNavBar(){
     /* Elements of Navigation Bar e = element*/
     var b = document.getElementsByTagName("body")[0];
     var e1 = "<a class='test' href='list2.html'>Reviews</a>";
-    var e2 = "<a class='test' href='ArticleList2.html'>Articles</a>";
+    var e2 = "<a class='test' href='ArticleList3.html'>Articles</a>";
     var e3 = "<a class='test' href='gridPractice2.html'>About</a>";
     b.insertAdjacentHTML('afterbegin', "<details class='navigation'><summary class='navigation'><a href='index.html'>test 25</a></summary><div>" + e1 + e2 + e3 + "</div></details>");
     }
