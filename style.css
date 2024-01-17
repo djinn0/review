@@ -14,6 +14,10 @@
         max-width: 100%;
         height: auto;
       }
+
+      image.background {
+        width: 60%;
+      }
       
 
       .title {
@@ -117,6 +121,10 @@
         .content{
           margin: auto;
           width: 90%;
+        }
+       
+        image.background {
+          width: 100%;
         }
 
         .title {
