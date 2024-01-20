@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <head>
+    <title>Template</title>
+    <meta name="keywords" content="add keywords">
+    <meta name="description" content="add description">
+    <script src="NavBar.js"></script>
+    <script src="footer.js"></script>
+    <script>
+      function show1(){
+        document.getElementById('alpha').style.display ='none';
+        document.getElementById('cat').style.display = 'block';
+      }
+
+      function show2(){
+        document.getElementById('alpha').style.display = 'block';
+        document.getElementById('cat').style.display ='none';
+      }
+      
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      .hide {
+        display: none;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div id='m'></div>
+    <h1 class='title'>insert title here<h1>
+
+    <input type="radio" id="radio-a" name="menu-style" value="radio-a" onclick="show2();">
+    <label for="html">Alphabetical</label>
+
+    <input type="radio" id="radio-c" name="menu-style" value="radio-c" onclick="show2();">
+    <label for="html">Catagorical</label>
+
+    <div id="alpha" class="hide" >hello world</div>
+    <div id="cat" class="hide">goodbye sky</div>
+    
+
+    <h1 class='content'>Test 1</h1>
+  </body>
+
+
+</html>
