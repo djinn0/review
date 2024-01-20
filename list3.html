@@ -25,6 +25,7 @@
 
       #alpha{
         width: 90%;
+        margin: auto;
       }
       
       #test{
@@ -33,6 +34,26 @@
         background-color: #add8e6;
         font-size: 5vmin;
       }
+
+      #cat{
+        width: 90%;
+        margin: auto;
+      }
+      
+      summary {
+        list-style: none; /* Removes the disclosure triangle. */
+        display: flex;
+        justify-content: space-between; /* adds space between elements */
+      }
+
+      summary:after{
+        content: "\002B";
+      }
+
+      details[open] summary:after{
+        content: "\00D7";
+      }
+      
     </style>
   </head>
   <body>
@@ -47,7 +68,7 @@
 
     <div id="alpha" class="hide" >hello world
       <!-- A -->
-        <a id='test'>Test</a>
+        <a id='test' href='ArcwavePow.html'>Arcwave Pow</a>
       <!-- B -->
       <!-- C -->
       <!-- D -->
@@ -93,7 +114,7 @@
     </div>
     
 
-    <h1 class='content'>Test 2</h1>
+    <h1 class='content'>Test 3</h1>
   </body>
 
 
