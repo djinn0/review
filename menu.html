@@ -28,7 +28,42 @@
         margin-bottom: 2vh;
 	font-size: 0;
       }
-      
+
+      .switch-field input {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+      }
+     
+     .switch-field label {
+	background-color: white;
+	color: black;
+	font-size: 5vmin;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -2px !important;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+      }
+
+
+      .switch-field input:checked + label {
+	background-color: #cee8f0;
+	box-shadow: none;
+      }
+
+      .switch-field label:first-of-type {
+	border-radius: 100px 0 0 100px;
+      }
+
+      .switch-field label:last-of-type {
+	border-radius: 0 100px 100px 0;
+      }
       
       .hide {
         display: none;
@@ -66,43 +101,6 @@
         border-style: outset;
       }
 
-      .switch-field input {
-	position: absolute;
-	clip: rect(0, 0, 0, 0);
-	height: 1px;
-	width: 1px;
-	border: 0;
-	overflow: hidden;
-}
-
-.switch-field label {
-	background-color: white;
-	color: black;
-	font-size: 5vmin;
-	line-height: 1;
-	text-align: center;
-	padding: 8px 16px;
-	margin-right: -2px !important;
-	border: 2px solid rgba(0, 0, 0, 0.2);
-	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-	transition: all 0.1s ease-in-out;
-}
-
-
-.switch-field input:checked + label {
-	background-color: #094c72;
-	box-shadow: none;
-}
-
-.switch-field label:first-of-type {
-	border-radius: 100px 0 0 100px;
-}
-
-.switch-field label:last-of-type {
-	border-radius: 0 100px 100px 0;
-}
-
-
       summary:after{
         content: "\002B";
       }
@@ -110,6 +108,8 @@
       details[open] summary:after{
         content: "\00D7";
       }
+
+
       
     </style>
   </head>
@@ -124,15 +124,22 @@
       <input type="radio" id="radio-c" name="menu-style" value="radio-c" onclick="show2();">
       <label for="radio-c">Catagory</label>
     </div>
-   
+
+            
+            
+            
+            
+            
     <div id="alpha" class="hide" >
       <!-- A -->
         <a class='menu-item' href='ArcwavePow.html'>Arcwave Pow</a>
       <!-- B -->
+        <a class='menu-item' href='BvibeSnugPlug.html'>Bvibe Snug Plug 2</a>
       <!-- C -->
       <!-- D -->
       <!-- E -->
       <!-- F -->
+        <a class='menu-item' href='FuzePleasurePlug3.html'>Fuze Pleasure Plug 3</a>
       <!-- G -->
       <!-- H -->
       <!-- I -->
@@ -141,12 +148,17 @@
       <!-- L -->
       <!-- M -->
       <!-- N -->
+        <a class='menu-item' href='NjoyPureWand.html'>Njoy Pure Wand</a>
       <!-- O -->
+	    <a class='menu-item' href='OxballsErgoPlug.html'>Oxballs Ergo Plug</a>
       <!-- P -->
       <!-- Q -->
       <!-- R -->
       <!-- S -->
       <!-- T -->
+        <a class='menu-item' href='TantusJuice.html'>Tantus Juice Plug </a>
+        <a class='menu-item' href='TengaFlipOrb.html'>Tenga Flip Orb </a>
+        <a class='menu-item' href='TengaSD.html'>Tenga SD</a>
       <!-- U -->
       <!-- V -->
       <!-- W -->
@@ -173,7 +185,7 @@
     </div>
     
 
-    <h1 class='content'>Test 15</h1>
+    <h1 class='content'>Test 16</h1>
   </body>
 
 
