@@ -27,7 +27,7 @@ function generateFooter()
   var contentHeight = Math.max(document.body.scrollHeight, document.documentElement.offsetHeight);
   var screenHeight = screen.height; 
   if (screenHeight > contentHeight ) {
-    var sf1 = 'div.footer {position: fixed; bottom: 0; z-index: 11; width: 100%; background-color: #333; }';
+    var sf1 = 'div.footer {position: fixed; bottom: 0; margin-top: 1.5vh; z-index: 11; width: 100%; background-color: #333; }';
   } else {
     var sf1 = 'div.footer {position: static; z-index: 11; width: 100%; background-color: #333; }';
   }
@@ -35,10 +35,11 @@ function generateFooter()
   var sf3 = '#element { padding: 8px 40px; display: flex; justify-content: space-between; }';
   var sf4 = '#element > a { color: white; text-decoration: none; font-size: 1.5em; display: inline-block; }';
   /* styling mobile */
-  var sm1 = '#anchor{color: white; font-size: 6vmin; text-align: center;}';
-  var sm2 = '#element > a { color: white; text-decoration: none; font-size: 4vmin; display: inline-block; }';
+  var sm1 = 'div.footer{margin-top: 0;}';
+  var sm2 = '#anchor{color: white; font-size: 6vmin; text-align: center;}';
+  var sm3 = '#element > a { color: white; text-decoration: none; font-size: 4vmin; display: inline-block; }';
   s.insertAdjacentHTML('beforeend', sf1 + sf2 + sf3 + sf4 );
-  s.insertAdjacentHTML('beforeend', '@media only screen and (max-width: 1000px){' + sm1 + sm2 + '}');
+  s.insertAdjacentHTML('beforeend', '@media only screen and (max-width: 1000px){' + sm1 + sm2 + sm3 +'}');
 }
     
  
