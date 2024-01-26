@@ -19,120 +19,129 @@
     </script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        /*
-	body{
-	 background-image: url("photo/background/map.png");
-	}
-        */
-	div.fixed-background{
-          position: fixed;
-	  z-index: -2;
-	  margin: 0;
-	  width: 100%;
-	  top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%)
-	}
-      
-      .switch-field {
-      	display: flex;
-      	overflow: hidden;
-	width: 50%;
-	margin: auto;
-        margin-bottom: 2vh;
-	font-size: 0;
-      }
-
-      .switch-field input {
-	position: absolute;
-	clip: rect(0, 0, 0, 0);
-	height: 1px;
-	width: 1px;
-	border: 0;
-	overflow: hidden;
-      }
-     
-     .switch-field label {
-	background-color: white;
-	color: black;
-	font-size: 5vmin;
-	line-height: 1;
-	text-align: center;
-	padding: 8px 16px;
-	margin-right: -2px !important;
-	border: 2px solid rgba(0, 0, 0, 0.2);
-	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-	transition: all 0.1s ease-in-out;
-      }
-
-
-      .switch-field input:checked + label {
-	background-color: #cee8f0;
-	color: black;
-	box-shadow: none;
-      }
-
-      .switch-field label:first-of-type {
-	border-radius: 100px 0 0 100px;
-      }
-
-      .switch-field label:last-of-type {
-	border-radius: 0 100px 100px 0;
-      }
-      
-      .hide {
-        display: none;
-      }
-
-      #alpha{
-        width: 90%;
-        margin: auto;
-      }
-      
-      a.menu-item{
-        padding: 20px 60px;
-        display: block;
-        background-color: #deeff5;
-        color: black;
-        font-size: 5vmin;
-        text-decoration: none;
-        border-radius: 10px;
-        border-style: outset;
-	opacity: 0.9;
-      }
-
-      a.menu-item:nth-child(even){
-        background-color: white;
-      }
-  
-
-      #cat{
-        width: 90%;
-        margin: auto;
-      }
-      
-      .menu-summary{
-        list-style: none; /* Removes the disclosure triangle. */
-        display: flex;
-        justify-content: space-between; /* adds space between elements */
-        font-size: 6vmin;
-        padding: 20px 20px;
-        background-color: #cee8f0;
-        border-radius: 10px;
-        border-style: outset;
-	opacity: 0.9;
-      }
-
-      summary:after{
-        content: "\002B";
-      }
-
-      details[open] summary:after{
-        content: "\00D7";
-      }
-
-
-      
+		        /*
+			body{
+			 background-image: url("photo/background/map.png");
+			}
+		        */
+			/* background element with picture */
+			div.fixed-background{
+		    position: fixed;
+			  z-index: -2;
+			  margin: 0;
+			  width: 100%;
+			  top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%)
+			}
+		      
+		  .switch-field {
+		  	display: flex;
+		  	overflow: hidden;
+				width: 50%;
+				margin: auto;
+				margin-bottom: 2vh;
+				font-size: 0;
+		      }
+		
+		  .switch-field input {
+				position: absolute;
+				clip: rect(0, 0, 0, 0);
+				height: 1px;
+				width: 1px;
+				border: 0;
+				overflow: hidden;
+		  }
+		     
+		  .switch-field label {
+				background-color: white;
+				color: black;
+				font-size: 5vmin;
+				line-height: 1;
+				text-align: center;
+				padding: 8px 16px;
+				margin-right: -2px !important;
+				border: 2px solid rgba(0, 0, 0, 0.2);
+				box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+				transition: all 0.1s ease-in-out;
+		  }
+		
+		
+		  .switch-field input:checked + label {
+				background-color: #cee8f0;
+				color: black;
+				box-shadow: none;
+		  }
+		
+		  .switch-field label:first-of-type {
+				border-radius: 100px 0 0 100px;
+		  }
+		
+		  .switch-field label:last-of-type {
+				border-radius: 0 100px 100px 0;
+		  }
+		      
+			.hide {
+				display: none;
+			}
+		
+			#alpha{
+				width: 60%;
+				margin: auto;
+			}
+		      
+			a.menu-item{
+				padding: 20px 60px;
+				display: block;
+				background-color: #deeff5;
+				color: black;
+				font-size: 5vmin;
+				text-decoration: none;
+				border-radius: 10px;
+				border-style: outset;
+				opacity: 0.9;
+			}
+		
+			a.menu-item:nth-child(even){
+				background-color: white;
+			}
+		  
+		
+			#cat{
+				width: 60%;
+				margin: auto;
+			}
+			
+			.menu-summary{
+				list-style: none; /* Removes the disclosure triangle. */
+				display: flex;
+				justify-content: space-between; /* adds space between elements */
+				font-size: 6vmin;
+				padding: 20px 20px;
+				background-color: #cee8f0;
+				border-radius: 10px;
+				border-style: outset;
+				opacity: 0.9;
+			}
+		
+			summary:after{
+				content: "\002B";
+			}
+		
+			details[open] summary:after{
+				content: "\00D7";
+			}
+		
+			@media only screen and (max-width: 1000px){
+				#alpha{
+					width: 90%;
+				}
+	
+				#cat{
+					width: 90%;
+				}
+			} 
+			
     </style>
   </head>
   <body>
