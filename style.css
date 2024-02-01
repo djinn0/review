@@ -17,7 +17,8 @@
 
 
       img.desktopBanner{
-         width: 100%;
+        display: inline-block;
+        width: 100%;
       }
       
       img.mobileBanner {
@@ -137,11 +138,11 @@
          }
 
          img.desktopBanner{
-           display: none;
-               
+           display: none;  
          }
       
          img.mobileBanner {
+           display: inline-block;
            width: 100%;
          }
 
