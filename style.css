@@ -15,9 +15,18 @@
         height: auto;
       }
 
-      image.background {
-        width: 60%;
+
+      img.desktopBanner{
+         width: 100%;
       }
+      
+      img.mobileBanner {
+        display: none;    
+      }
+
+  
+
+     
       
 
       .title {
@@ -123,9 +132,18 @@
           width: 90%;
         }
        
-        image.background {
-          width: 100%;
-        }
+         image.background {
+           width: 100%;
+         }
+
+         img.desktopBanner{
+           display: none;
+               
+         }
+      
+         img.mobileBanner {
+           width: 100%;
+         }
 
         .title {
           margin: auto;
