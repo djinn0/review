@@ -29,7 +29,7 @@ function generateFooter()
   if (screenHeight > contentHeight ) {
     var sf1 = 'div.footer {position: fixed; bottom: 0; margin-top: 1.5vh; z-index: 11; width: 100%; background-color: #333; }';
   } else {
-    var sf1 = 'div.footer {position: static; z-index: 11; width: 100%; background-color: #333; }';
+    var sf1 = 'div.footer {position: static; margin-top: 1.5vh; z-index: 11; width: 100%; background-color: #333; }';
   }
   var sf2 = '#anchor{color: white; font-size: 1.75em; text-align: center;}';
   var sf3 = '#element { padding: 8px 40px; display: flex; justify-content: space-between; }';
