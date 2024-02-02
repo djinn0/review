@@ -12,6 +12,13 @@
         var part3 = "@gmail.com";
         document.getElementById("email").innerHTML = "<a href=mailto:" + part1 + part2 + part3 + ">" + part1 + part2 + part3 + "</a>";
       }
+
+      function scrollToBottom() {
+        if (screen.width > screen.height) {
+          window.scrollTo(0, 400);
+        } 
+      }
+      window.onload = scrollToBottom;
     </script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>    </style>
