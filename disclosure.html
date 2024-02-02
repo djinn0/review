@@ -6,14 +6,18 @@
     <script src="NavBar2.js"></script>
     <script src="footer2.js"></script>
     <script>
-      function setScroll() {
-        window.scrollTo(0, 1000);
+      function scrollToBottom() {
+        if (screen.width > screen.height) {
+          window.scrollTo(0, 400);
+        } 
       }
+      history.scrollRestoration = "manual";
+      window.onload = scrollToBottom;
     </script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style> </style>
   </head>
-  <body onload="setScroll()">
+  <body>
     <img src='photo/background/prismatic2.jpg' alt='Grand prismatic spring' class='desktopBanner'>
     <img src='photo/background/prismatic.jpg' alt='Grand Prismatic spring' class='mobileBanner'>
         
