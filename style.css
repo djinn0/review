@@ -103,6 +103,14 @@
         width: 100%;
         background-color: white;
       }
+/* Margin div used for spacing desktop content, will not be displayed in mobile content */ 
+     #dm{
+        height: 3vh;
+        width: 100%;
+        background-color: white;
+     }
+
+
 /* styling for button */ 
  .button{
       background-color: #094c72;
@@ -154,7 +162,12 @@
           width: 90%;
           text-align: center;
         }
-        
+
+     /* Margin div used for spacing desktop content, will not be displayed in mobile content */ 
+        #dm{
+          display: none;
+        }  
+            
         h1.content {
           font-size: 8vmin;
         }
