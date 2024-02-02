@@ -101,12 +101,14 @@
       #m {
         height: 3vh;
         width: 100%;
+        opacity: 0.0;
         background-color: white;
       }
 /* Margin div used for spacing desktop content, will not be displayed in mobile content */ 
      #dm{
         height: 3vh;
         width: 100%;
+        opacity: 0.0;
         background-color: white;
      }
 
