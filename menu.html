@@ -15,6 +15,12 @@
         document.getElementById('alpha').style.display = 'none';
         document.getElementById('cat').style.display ='block';
       }
+
+			function test(){
+				show1();
+				deleteFooter();
+			}
+	
       
     </script>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -150,7 +156,7 @@
     <p class='content'>Display reviews alphabetically or categorically</p>
 
     <div class='switch-field'>
-      <input type="radio" id="radio-a" name="menu-style" value="radio-a" onclick="show1(); deleteFooter();" checked>
+      <input type="radio" id="radio-a" name="menu-style" value="radio-a" onclick="test();" checked>
       <label for="radio-a">Review</label>
       <input type="radio" id="radio-c" name="menu-style" value="radio-c" onclick="show2();">
       <label for="radio-c">Category</label>
@@ -219,7 +225,7 @@
     </details>
      
     </div>
-    <h1 class='content'>Test 26</h1>
+    <h1 class='content'>Test 27</h1>
     <!--
     
     -->
