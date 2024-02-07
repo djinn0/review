@@ -42,4 +42,7 @@ function generateFooter()
   s.insertAdjacentHTML('beforeend', '@media only screen and (max-width: 1000px){' + sm1 + sm2 + sm3 +'}');
 }
     
-
+function deleteFooter(){
+    const element = document.getElementsByClassName("footer");
+    element.remove();
+} 
