@@ -12,7 +12,7 @@ function generateFooter()
   let n = d.getFullYear(); /* Adds current year to footer */
   let e1 = '<a href="contact.html">Contact</a>';
   let e2 = '<a href="disclosure.html">Sex Toy Ahoy &copy' + n + '</a>';
-  let e3 = '<a href="disclosure.html">Disclosure 1</a>';
+  let e3 = '<a href="disclosure.html">Disclosure</a>';
   let element = '<div id="element">' + e1 + e2 + e3 + '</div>';
   let anchor = '<div id="anchor">' + "\u2693" + '</div>';
   x.insertAdjacentHTML('beforeend', '<div class="footer">' + element + anchor + '</div>');
@@ -41,9 +41,5 @@ function generateFooter()
   s.insertAdjacentHTML('beforeend', sf1 + sf2 + sf3 + sf4 );
   s.insertAdjacentHTML('beforeend', '@media only screen and (max-width: 1000px){' + sm1 + sm2 + sm3 +'}');
 }
-
-deleteFooter(){
-    const element = document.getElementsByClassName("footer");
-    element.remove();
-}
+    
  
