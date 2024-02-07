@@ -15,7 +15,7 @@ function generateFooter()
   let e3 = '<a href="disclosure.html">Disclosure</a>';
   let element = '<div id="element">' + e1 + e2 + e3 + '</div>';
   let anchor = '<div id="anchor">' + "\u2693" + '</div>';
-  x.insertAdjacentHTML('beforeend', '<div class="footer">' + element + anchor + '</div>');
+  x.insertAdjacentHTML('beforeend', '<div class="footer" id="footer">' + element + anchor + '</div>');
   
   /* styling */
   var s = document.getElementsByTagName("style")[0];
@@ -42,7 +42,7 @@ function generateFooter()
   s.insertAdjacentHTML('beforeend', '@media only screen and (max-width: 1000px){' + sm1 + sm2 + sm3 +'}');
 }
     
-function deleteFooter(){
-    const element = document.getElementsByClassName("footer");
-    element.remove();
-} 
+function removeFooter() {
+  const element = document.getElementById("footer");
+  element.remove();
+}
