@@ -17,8 +17,14 @@
       }
 
 			function test(){
-				show1();
-				deleteFooter();
+			   let width = screen.width;
+			   if ( width > 1000 ){
+			     show1();
+			     removeFooter();
+			     generateFooter();
+			   }else{
+			     show1();
+			   }
 			}
 	
       
@@ -156,7 +162,7 @@
     <p class='content'>Display reviews alphabetically or categorically</p>
 
     <div class='switch-field'>
-      <input type="radio" id="radio-a" name="menu-style" value="radio-a" onclick="show1(); removeFooter(); generateFooter();" checked>
+      <input type="radio" id="radio-a" name="menu-style" value="radio-a" onclick="test();" checked>
       <label for="radio-a">Review</label>
       <input type="radio" id="radio-c" name="menu-style" value="radio-c" onclick="show2();">
       <label for="radio-c">Category</label>
@@ -225,7 +231,7 @@
     </details>
      
     </div>
-    <h1 class='content'>Test 30</h1>
+    <h1 class='content'>Test 31</h1>
     <!--
     
     -->
