@@ -16,7 +16,7 @@
         document.getElementById('cat').style.display ='block';
       }
 
-			function test(){
+			function adaptiveShow1(){
 			   let width = screen.width;
 			   if ( width > 1000 ){
 			     show1();
@@ -24,6 +24,17 @@
 			     generateFooter();
 			   }else{
 			     show1();
+			   }
+			}
+
+			function adaptiveShow2(){
+			   let width = screen.width;
+			   if ( width > 1000 ){
+			     show2();
+			     removeFooter();
+			     generateFooter();
+			   }else{
+			     show2();
 			   }
 			}
 	
@@ -162,9 +173,9 @@
     <p class='content'>Display reviews alphabetically or categorically</p>
 
     <div class='switch-field'>
-      <input type="radio" id="radio-a" name="menu-style" value="radio-a" onclick="test();" checked>
+      <input type="radio" id="radio-a" name="menu-style" value="radio-a" onclick="adaptiveShow1();" checked>
       <label for="radio-a">Review</label>
-      <input type="radio" id="radio-c" name="menu-style" value="radio-c" onclick="show2();">
+      <input type="radio" id="radio-c" name="menu-style" value="radio-c" onclick="adaptiveShow2();">
       <label for="radio-c">Category</label>
     </div>
 
@@ -241,7 +252,7 @@
     </details>
      
     </div>
-    <h1 class='content'>Test 31</h1>
+    <h1 class='content'>Test 32</h1>
     <!--
     
     -->
