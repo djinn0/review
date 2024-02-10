@@ -1,8 +1,8 @@
 <!DOCTYPE html>
   <head>
-    <title>Review Menu</title>
-    <meta name="keywords" content="menu, reviews">
-    <meta name="description" content="Menu linking all live reviews">
+    <title>Template</title>
+    <meta name="keywords" content="add keywords">
+    <meta name="description" content="add description">
     <script src="NavBar2.js"></script>
     <script src="footer2.js"></script>
     <script>
@@ -17,25 +17,25 @@
       }
 
 			function adaptiveShow1(){
-			  let width = screen.width;
-			  if ( width > 1000 ){
-			    show1();
-			    removeFooter();
-			    generateFooter();
-			  }else{
-			    show1();
-			  }
+			   let width = screen.width;
+			   if ( width > 1000 ){
+			     show1();
+			     removeFooter();
+			     generateFooter();
+			   }else{
+			     show1();
+			   }
 			}
 
 			function adaptiveShow2(){
-			  let width = screen.width;
-			  if ( width > 1000 ){
-			    show2();
-			    removeFooter();
-			    generateFooter();
-			  }else{
-			    show2();
-			  }
+			   let width = screen.width;
+			   if ( width > 1000 ){
+			     show2();
+			     removeFooter();
+			     generateFooter();
+			   }else{
+			     show2();
+			   }
 			}
 
 	
@@ -49,9 +49,9 @@
 			  z-index: -2;
 			  margin: 0;
 			  width: 80%;
-		    top: 50%;
-				left: 50%;
-		    transform: translate(-50% -50%);
+			  top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%)
 		}
 		      
 		  .switch-field {
@@ -61,7 +61,7 @@
 				margin: auto;
 				margin-bottom: 2vh;
 				font-size: 0;
-		  }
+		      }
 		
 		  .switch-field input {
 				position: absolute;
@@ -171,9 +171,8 @@
 	<div id='dm'></div>
 	<div id='dm'></div>
 	<h1 class='title'>Reviews <h1>
-    <p class='contentS' id='menu-subheading'> Click to Display reviews alphabetically or categorically</p>
+    <p class='content'>Display reviews alphabetically or categorically</p>
 
-		<!-- a switch used to toggle between alphabetical and catagorical menu -->
     <div class='switch-field'>
       <input type="radio" id="radio-a" name="menu-style" value="radio-a" onclick="adaptiveShow1();" checked>
       <label for="radio-a">Review</label>
@@ -181,13 +180,11 @@
       <label for="radio-c">Category</label>
     </div>
 
-		<!-- displays a picture behind content -->
     <div class='fixed-background'><img src='photo/background/polarMap.png'></div>
     <!--      
     <div>“Which will hold greater rule over you? Your fear or your curiosity?” — Wonder Woman</div>     
     -->      
-
-	
+            
     <div id="alpha" class="hide" >
       <!-- A -->
         <a class='menu-item' href='ArcwavePow.html'>Arcwave Pow</a>
@@ -256,7 +253,7 @@
     </details>
      
     </div>
-    <h1 class='content'>Test 37</h1>
+    <h1 class='content'>Test 32</h1>
     <!--
     
     -->
