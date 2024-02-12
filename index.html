@@ -4,7 +4,11 @@
     <script src="footer2.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-
+     
+      div.desktop-index{
+        
+      }
+      
 
     a {
         text-decoration: none;
@@ -49,7 +53,12 @@
         display: none;
       }
    @media only screen and (max-width: 1000px){
-      
+      div.desktop-index{
+        display: none;
+      }
+
+
+     
       /* contains homepage content shown on mobile screen */
        #main-index {
          display: block;
@@ -106,6 +115,25 @@
     </style>
   </head>
   <body>
+    <div class='desktop-index'>
+      <img src='photo/background/MexicoBeach2.jpg' alt='Sunset on the Beach' class='desktopBanner'>
+      <a href='gridPractice2.html'>
+        <div class='container'>
+          <div id='photo-container'>
+            <img src='photo/graphic/PiratePortrait2.jpeg' >
+          </div>
+        <div id='text-container'>
+            <h2 class='contentS'>About</h2>
+            <p class='contentS'> Hi I'm Dave, the captain of this blog.
+            These are some words These are some wordsThese are some wordsThese are some wordsThese are some wordsThese are some words
+            These are some wordsThese are some wordsThese are some wordsThese are some wordsThese are some wordsThese are some words</p>
+          </div>
+        </div>
+      </a>
+    
+    
+    </div>
+    
     <div id='main-index'>
      <!--
       <img src='photo/background/SunsetShip1.jpg' alt='background sailing ship and sunset' class='picture'>
@@ -115,11 +143,7 @@
       <h2 id='tagline-index'>Candid and occasionally funny Sex Toy Reviews from an avowed Toy Enthusiast</h2>
       
     </div>
-
-    <div class='desktop-index'></div>
-    
-    
-    
+ 
     <div id='index-banner'>&#9875</div>
     
     
