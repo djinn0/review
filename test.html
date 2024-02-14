@@ -7,12 +7,69 @@
     <script src="footer2.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
+      .desktop-index{
+        display: block;
+        background-image: url("photo/background/MexicoSunset3.jpg");
+        background-size: cover;
+        background-color: #9BAAB7;
+        width: 100vw;
+        height: 95vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .mobile-index{
+        display: none
+      }
+
+      #title-index{
+        margin: 0;
+        width: 100%;
+        font-size: 25vmin;
+        text-align: center;
+        color: black;
+      }
+        
+      #tagline-index{
+        width: 100%;
+        text-align: center;
+        font-size: 5vmin;
+        color: white;
+        padding: 0px 10px;
+      }
+
+      @media only screen and (max-width: 1000px){
+        .desktop-index{
+          display: none;
+        }
+
+        .mobile-index {
+         display: block;
+         background-image: url("photo/background/SunsetShipL.jpg");
+         background-size: cover;
+         background-color: lightblue;
+         width: 100vw;
+         height: 87vh;
+         margin: 0;
+         padding: 0;
+        }
       
-      
+      }
     </style>
   </head>
   <body>
-    <h1 class='title'>Insert title</h1>
+     <div class='desktop-index'>
+      <p id='title-index'>A H O Y</p>
+      <h2 id='tagline-index'>Candid and occasionally funny Sex Toy Reviews from an avowed Toy Enthusiast</h2> 
+    </div>
+    
+    <div class='mobile-index'>
+      <p id='title-index'>A H O Y</p>
+      <h2 id='tagline-index'>Candid and occasionally funny Sex Toy Reviews from an avowed Toy Enthusiast</h2>
+    </div>
+
+
+    
    <h2 class='content'>test 4</h2>
 <div id='m'></div>
     
