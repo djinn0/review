@@ -164,13 +164,15 @@
           width: 90%;
           color: black;
           font-size: 9vmin;
+          text-align: center;
         }
 
         .subtitle {
           margin: auto;
           width: 90%;
-          color: black;
+          color: green;
           font-size: 7vmin;
+          text-align: center;
         }
 
         
