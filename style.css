@@ -171,14 +171,14 @@
           width: 90%;
           color: black;
           font-size: 9vmin;
-          text-align: center;
+          text-align: left;
         }
 
         .subtitle {
           margin: auto;
           width: 90%;
-          color: green;
-          font-size: 7vmin;
+          color: #404040;
+          font-size: 6vmin;
           text-align: center;
         }
 
