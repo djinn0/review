@@ -60,7 +60,9 @@
       h2.content{
         font-size: 1.5em;
       }
-
+      h3.content{
+        font-size: 1.5em;
+      }
       p.content{
         margin-bottom: 2vh;
         font-size: 1.5em;
@@ -202,7 +204,9 @@
         h2.content {
           font-size: 5vmin;
         }
-        
+        h3.content {
+          font-size: 4vmin;
+        }
         p.content {
           font-size: 4vmin;
         }
