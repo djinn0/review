@@ -66,6 +66,7 @@
       p.content{
         margin-bottom: 2vh;
         font-size: 1.5em;
+        /* prevents content from being selected of copied */   
         -webkit-user-select: none; /* Safari */
         -ms-user-select: none; /* IE 10 and IE 11 */
         user-select: none; /* Standard syntax */
