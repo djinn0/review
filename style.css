@@ -41,12 +41,19 @@
 
       .date {
         width: 50%;
-        font-size: 1.5;
+        font-size: 1.5em;
         margin: auto;
         color: #4e4e4e;
         margin-bottom: 2vh;
       }
-      
+
+      hr {
+        width: 50%;
+        font-size: 1em;
+        color: red;
+          
+      }
+
       /* content styling */
       .content{
         margin: auto; /* centers content */
