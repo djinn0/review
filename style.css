@@ -151,6 +151,19 @@
       margin-bottom: 2vh;
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
+
+     a.blue-button{
+     position: absolute;
+     color: white;
+     background-color: #0492C2;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     padding: 5px 10px;
+     font-size: 1.2em;
+     left: 20%;
+   }
+     
       
 /* Styling for mobile content */
        @media only screen and (max-width: 1000px){
@@ -194,9 +207,7 @@
           font-size: 6vmin;
           text-align: left;
         }
-
-        
-
+            
         .date {
           font-size: 5vmin;
           width: 90%;
@@ -238,6 +249,12 @@
         /* mobile styling for button (change of font) */     
         .button{
          font-size: 4vmin;
+        }
+        
+        a.blue-button{
+          left: 6%;
+          font-size: 5vmin;
+          color: white;
         }
 
         p.subtext{
