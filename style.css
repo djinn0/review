@@ -54,6 +54,10 @@
           
       }
 
+      b {
+           font-size: 1.5em;
+      }
+
       /* content styling */
       .content{
         margin: auto; /* centers content */
@@ -171,6 +175,10 @@
          margin: 0;
          padding: 0;
          background-color: white;
+         }
+
+         b {
+           font-size: 4vmin;
          }
        
         .content{
